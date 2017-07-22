@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>contact us</title>
+    <title>about us</title>
 
     <link rel="stylesheet" href="Static/css/bootstrap.min.css">
 
@@ -17,7 +17,7 @@
         }
 
         .header{
-            flex: 0 0 84px;
+            flex: 0 0 65px;
             background-color: white;
             flex-direction: row;
         }
@@ -35,17 +35,41 @@
             text-decoration: none;
         }
 
-        .RuiEr{
-            padding: 3%;
-            margin-right: auto;margin-left: auto;
-        }
-
-        p{
-            margin-bottom: 20px;
-        }
-
         li{
             margin-right: 40px;
+        }
+
+        .content-header-box{
+            position: relative;
+            min-height: 307px;
+            max-width: 990px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .content-header-box:before{
+            width: 100%;
+            min-width: 1200px;
+            height: 100%;
+            position: absolute;
+            right: -166px;
+            top: 0;
+            background: url('./Static/img/about-content.jpg') no-repeat right top;
+            background-size: auto 100%;
+            -webkit-background-size: auto 100%;
+            content: '';
+        }
+        .inner-box{
+            min-height: 130px;
+            display: table;
+            position: relative;
+            max-width: 960px;
+            margin: 55px auto 0;
+            width: calc(100% - 30px);
+        }
+        .image{
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 
@@ -55,27 +79,42 @@
 <header class="header">
 
 
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="line-height: 52px;background-color: white">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="height: 65px;background-color: white">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#" style="padding-left: 10%">
-            Navbar
-        </a>
+        <!--<a class="navbar-brand" href="#" style="padding-left: 10%">-->
+        <!--Navbar-->
+        <!--</a>-->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav" style="padding-left: 50%">
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html" style="width: 98px;">Contact us<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">PRODUCT</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about-us.html" style="width: 84px">About us</a>
-                </li>
+            <ul class="navbar-nav" style="padding-left: 40%">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="about-us.html" style="width: 84px">About us</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" style="width: 100px" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">ACCESSORIES</a>
+                        <a class="dropdown-item" href="#">ENVIRONMENTAL</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html" style="width: 98px;">Contact us<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="our-reailers.html" style="width: 140px">Our Retailers</a>
+                </li>
+
             </ul>
         </div>
     </nav>
@@ -83,47 +122,106 @@
 </header>
 
 
+<div style="background-image: url('./Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
+    <div style="position: relative;width: 960px;margin: 0px auto;">
+        <a href="index.html">
+            <img style="position: absolute;top: 22px;" src="./Static/img/logo1.png">
+        </a>
+    </div>
+
+</div>
 
 
 <div class="content">
     <!--内容-->
-
-    <div class="card">
-        <div class="card-block" style="text-align: center">
-            <!--<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
-                about us
-            <!--</button>-->
+    <div style="overflow: hidden;background: #2a3545;margin-top: 12px;">
+        <div class="content-header-box">
+            <img src="./Static/img/about-us.png" alt="" style="margin-left: 15px;position: relative;margin-top: 72px;margin-bottom: 36px;">
+            <p style="padding-left: 15px;padding-right: 15px;position: relative;font-family: 'Open Sans', sans-serif;font-weight: 400;font-size: 15px;line-height: 28px;color: #fff;">
+                    2017年07月22日
+                <br>
+                2017年07月21日
+                <br>
+                2017年07月20日
+            </p>
         </div>
     </div>
 
+    <div style="max-width: 960px;margin: 0 auto;padding-bottom: 74px;width: calc(100% - 30px);">
+        <h4 style="font-family: 'Open Sans', sans-serif;font-weight: 400;font-size: 23px;color: #000;padding-bottom: 23px;padding-top: 32px;">镜子 - 张枣</h4>
+        <p style="font-family: 'Open Sans', sans-serif;font-weight: 400;font-size: 14px;line-height: 20px;color: #5c5d5d;">
+            只要想起一生中后悔的事 <br>
+            梅花便落了下来 <br>
+            比如看她游泳到河的另一岸 <br>
+            比如登上一株松木梯子 <br>
+            危险的事固然美丽 <br>
+            不如看她骑马归来 <br>
+            面颊温暖 <br>
+            羞惭。低下头，回答着皇帝 <br>
+            一面镜子永远等候她 <br>
+            让她坐到镜中常坐的地方 <br>
+            望着窗外，只要想起一生中后悔的事 <br>
+            梅花便落满了南山
 
-    <div class="RuiEr">
-        <img src="Static/img/4.jpg" class="img-fluid" style="width: 747px;margin-bottom: 2%">
-
-        <h3>
-            <strong>
-                Guilin, formerly romanized as Kweilin, is a prefecture-level city in the northeast of China's Guangxi Zhuang Autonomous Region. It is situated on the west bank of the Li River and borders Hunan to the north. Its name means "Forest of Sweet Osmanthus", owing to the large number of fragrant sweet osmanthus trees located in the city. The city has long been renowned for its scenery of karst topography and is one of China's most popular tourist destinations.
-            </strong>
-        </h3>
-
-        <h3><strong>
-            In 314 BC, a small settlement was established along the banks of the Li River.[citation needed]
-
-            During the Qin Dynasty's (221–207 BC) campaigns against the state of Nanyue, the first administration was set up in the area around Guilin.[2]
-
-            In 111 BC, during the reign of Emperor Wu of the Han Dynasty, Shi An County was established, which could be regarded as the beginning of the city.
-        </strong></h3>
-
-        <p>
-            Guilin is located in northern Guangxi, bordering Liuzhou to the west, Laibin to the southwest, Wuzhou to the south, Hezhou to the southeast, and within neighbouring Hunan, Huaihua to the northwest, Shaoyang to the north, and Yongzhou to the east. It has a total area of 27,809 square kilometres (10,737 sq mi). The topography of the area is marked by karst formations. The Li River flows through the city.
         </p>
+    </div>
 
-        <p>
-            Guilin has a monsoon-influenced humid subtropical climate (Köppen Cfa), with short, mild winters, and long, hot, humid summers. Winter begins dry but becomes progressively wetter and cloudier. Spring is generally overcast and often rainy, while summer continues to be rainy though is the sunniest time of year. Autumn is sunny and dry. The monthly 24-hour average temperature ranges from 7.9 °C (46.2 °F) in January to 28.0 °C (82.4 °F) in July, and the annual mean is 18.84 °C (65.9 °F). The annual rainfall is just above 1,900 mm (75 in), and is delivered in bulk (~50%) from April to June, when the plum rains occur and often create the risk of flooding. With monthly percent possible sunshine ranging from 14% in March to 53% in September, the city receives 1,487 hours of bright sunshine annually.
-        </p>
+    <div style="overflow: hidden;background: #f4f4f4;padding-bottom: 86px;">
+        <div class="inner-box">
+            <div class="image">
+                <img src="Static/img/about-pc.gif" alt="">
+            </div>
+            <p style="display: table-cell;vertical-align: middle;padding-left: 178px;line-height: 26px;color: #707171;">
+                《嘲笑》
+                <br>
+                你瞧
+                <br>
+                多么可笑
+                <br>
+                在我一无所有的时候
+                <br>
+                我就想为你造一所房子
+            </p>
+        </div>
+
+        <div class="inner-box">
+            <div class="image">
+                <img src="Static/img/about-bulb.gif" alt="">
+            </div>
+            <p style="display: table-cell;vertical-align: middle;padding-left: 178px;line-height: 26px;color: #707171;">
+                《一代人》
+                <br>
+                黑夜给了我黑色的眼睛，
+                <br>
+                我却用它寻找光明。
+            </p>
+        </div>
+
+        <div class="inner-box">
+            <div class="image">
+                <img src="Static/img/about-globe.gif" alt="">
+            </div>
+            <p style="display: table-cell;vertical-align: middle;padding-left: 178px;line-height: 26px;color: #707171;">
+                《等你》
+                <br>
+                等你
+                <br>
+                在人间
+                <br>
+                你来
+                <br>
+                我欢喜
+                <br>
+                你不来
+                <br>
+                我寂然
+            </p>
+        </div>
+
 
 
     </div>
+
 
 
 </div>
