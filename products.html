@@ -2,9 +2,203 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PRODUCTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="Static/css/bootstrap.min.css">
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-flow: column;
+        }
+
+        .header{
+            flex: 0 0 65px;
+            background-color: white;
+            flex-direction: row;
+        }
+
+        .content{
+            flex: 1 0 auto;
+        }
+
+        .footer{
+            flex: 0 0 61px;
+            background-color: #1d1e1f;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            margin-right: 40px;
+        }
+
+        #leftDiv ul{
+            margin: 0 auto;
+            float: none;
+            width: 90%;
+        }
+
+        #leftDiv ul li{
+            color: #444;
+        }
+
+        #leftDiv li{
+            padding: 0 0 4px 18px;
+            text-indent: 10px;
+            margin-bottom: 5px;
+            border-bottom: #ccc 1px dashed;
+        }
+
+        #leftDiv ul li ul{
+            display: none;
+            width: 364px;
+            list-style-type: none;
+        }
+
+        #leftDiv ul li:hover ul{
+            display: block;
+        }
+
+        #leftDiv li a{
+            color: #444;
+            height: 29px;
+            line-height: 29px;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: #444;
+        }
+
+    </style>
+
+
 </head>
 <body>
+<header class="header">
 
+
+
+
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="height: 65px;background-color: white">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--<a class="navbar-brand" href="#" style="padding-left: 10%">-->
+        <!--Navbar-->
+        <!--</a>-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="padding-left: 30%">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html">Company</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link active" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="farmingTechnology.html" style="width: 166px;">Farming technology<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cases.html">Cases</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+
+<div class="content" style="background-image: url('./Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
+    <div style="position: relative;width: 960px;margin: 0px auto;">
+        <a href="index.html">
+            <img style="position: absolute;top: 22px;" src="./Static/img/logo1.png">
+        </a>
+    </div>
+
+</div>
+
+<div class="content" style="background-image: url('./Static/img/home-bg.jpg'); background-size: cover">
+    <!--内容-->
+
+        <div style="width: 401px;float: left;margin-right: 1px;overflow: hidden">
+            <div>
+                <h3 style="font-size: 13px;overflow: hidden;height: 48px;line-height: 66px;text-indent: 20px;color: #fff;"></h3>
+                <div>
+                    <div id="leftDiv" style="padding-top: 4px;zoom: 1;overflow: hidden;">
+                        <ul style="list-style-type: none;">
+                            <li id="leftli">
+                                <a href="#">Aquaculture system</a>
+                                <ul style="z-index: 1004;">
+                                    <li>
+                                        <a href="#">Recirculating Aquaculture System</a>
+                                    </li>
+                                    <li><a href="#">Membrane diffusers</a></li>
+                                    <li><a href="#">Air stones</a></li>
+                                    <li><a href="#">Aerotubes</a></li>
+                                    <li><a href="#">Sand filters</a></li>
+                                    <li><a href="#">Oxygen cones</a></li>
+                                    <li><a href="#">Protein skimmers</a></li>
+                                    <li><a href="#">Bead filters</a></li>
+                                    <li><a href="#">Biofilter Media</a></li>
+                                    <li><a href="#">Ozone and Oxygen generations</a></li>
+                                    <li><a href="#">Roots design Air blowers/pumps</a></li>
+                                    <li><a href="#">UV water sterilization units</a></li>
+                                    <li><a href="#">Hatchery Equipment</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Wastewater treatment</a></li>
+                            <li><a href="#">Refrigeration/cooling</a></li>
+                            <li><a href="#">Processing&packing</a></li>
+                            <li><a href="#">Fish Meal,Fish Oil and Fish Feed</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<footer class="footer"><a style="color: white;line-height: 61px;">Developed by Angus Cai.</a></footer>
+
+
+
+
+
+
+
+
+
+<script src="Static/js/jquery.min.js"></script>
+<script src="Static/js/tether.min.js"></script>
+<script src="Static/js/bootstrap.min.js"></script>
 </body>
 </html>
