@@ -176,19 +176,19 @@
                                 <li>
                                     <a onclick="showTab('RAS')">Recirculating Aquaculture System</a>
                                 </li>
-                                <li><a onclick="showTab('MBD')" href="#" href="#">Membrane bubble diffusers</a></li>
+                                <li><a onclick="showTab('MBD')" href="#">Membrane bubble diffusers</a></li>
                                 <li><a onclick="showTab('Aerotubes')" href="#">Aerotubes</a></li>
-                                <li><a href="#">Air stones</a></li>
+                                <li><a onclick="showTab('Air_stones')" href="#" >Air stones</a></li>
                                 <li><a onclick="showTab('AB')"  href="#">Air blowers/pumps</a></li>
-                                <li><a href="#">Aerators</a></li>
-                                <li><a href="#">Oxygen cones</a></li>
-                                <li><a href="#">Protein skimmers</a></li>
-                                <li><a href="#">Filters</a></li>
-                                <li><a href="#">Biofilter Media</a></li>
-                                <li><a href="#">Ozone and Oxygen generations</a></li>
-                                <li><a href="#">UV water sterilization units</a></li>
+                                <li><a onclick="showTab('Aerators')" href="#">Aerators</a></li>
+                                <li><a onclick="showTab('Oxygen_Cones')" href="#">Oxygen cones</a></li>
+                                <li><a onclick="showTab('Protein_skimmers')" href="#">Protein skimmers</a></li>
+                                <li><a onclick="showTab('Filters')" href="#">Filters</a></li>
+                                <li><a onclick="showTab('Biofilter_Media')" href="#">Biofilter Media</a></li>
+                                <li><a onclick="showTab('Ozone_and_Oxygen_generations')" href="#">Ozone and Oxygen generations</a></li>
+                                <li><a onclick="showTab('UV_water_sterilization_units')" href="#">UV water sterilization units</a></li>
                                 <li><a href="#">Hatchery Equipment</a></li>
-                                <li><a href="#">Feeding machine</a></li>
+                                <li><a onclick="showTab('Feeding_machine')" href="#">Feeding machine</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#WTS" role="tab">Wastewater treatment System</a></li>
@@ -200,6 +200,23 @@
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#AB" role="tab"></a></li>
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#RB" role="tab"></a></li>
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#RB2" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Air_stones" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Aerators" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Impeller_aeratorr" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Paddel_wheel_aerator" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Waving_surge_aerator" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Oxygen_Cones" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Protein_skimmers" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Filters" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#DRUM_FILTER" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#SAND_FILTER" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Biofilter_Media" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Ozone_and_Oxygen_generations" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#oxygen_generator" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#ozone_generator" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#UV_water_sterilization_units" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Ultraqua" role="tab"></a></li>
+                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Feeding_machine" role="tab"></a></li>
 
 
 
@@ -223,53 +240,176 @@
 
         </div>
 
-        <div class="tab-pane" id="WTS" role="tabpanel">2</div>
-        <div class="tab-pane" id="RCS" role="tabpanel">3</div>
-        <!--detail-->
-        <div class="tab-pane" id="RAS" role="tabpanel">
+        <div class="tab-pane" id="WTS" role="tabpanel">
+            <div id="accordion2" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne2">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                Waste Water Management
+                            </a>
+                        </h5>
+                    </div>
 
-            <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
-                <!--<ol class="carousel-indicators">-->
-                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
-                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>-->
-                    <!--<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>-->
-                <!--</ol>-->
-                <!--<div class="carousel-inner" role="listbox">-->
-                    <!--<div class="carousel-item active">-->
-                        <!--<img class="d-block img-fluid" src="./Static/img/product/RAS%20Technology%20Systems/1.jpg" alt="First slide">-->
-                    <!--</div>-->
-                    <!--<div class="carousel-item">-->
-                        <!--<img class="d-block img-fluid" src="./Static/img/product/RAS%20Technology%20Systems/2.jpg" alt="Second slide">-->
-                    <!--</div>-->
-                    <!--<div class="carousel-item">-->
-                        <!--<img class="d-block img-fluid" src="./Static/img/product/RAS%20Technology%20Systems/3.jpg" alt="Third slide">-->
-                    <!--</div>-->
-                    <!--<div class="carousel-item">-->
-                        <!--<img class="d-block img-fluid" src="./Static/img/product/RAS%20Technology%20Systems/4.jpg" alt="Third slide">-->
-                    <!--</div>-->
-                    <!--<div class="carousel-item">-->
-                        <!--<img class="d-block img-fluid" src="./Static/img/product/RAS%20Technology%20Systems/5.jpg" alt="Third slide">-->
-                    <!--</div>-->
-                    <!--<div class="carousel-item">-->
-                        <!--<img class="d-block img-fluid" src="./Static/img/product/RAS%20Technology%20Systems/6.jpg" alt="Third slide">-->
-                    <!--</div>-->
+                    <div id="collapseOne2" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
 
+                            <div>
+                                <img style="width: 900px;height: 500px" src="./Static/img/product/WasteWater/5.jpg">
+                            </div>
+
+                            <p>All recirculation systems (RAS) intake and discharge water whether it be freshwater or salt water at one time or another.</p>
+                            <p>Fish displace water as they grow and this water must go somewhere, all systems have a designed water area/m3 therefore a fish biomass increases water is displaced to make wy for increased fish weight.</p>
+                            <p>To maintain a healthy water environment waste is removed daily, this waste is contained in waters drained off to which unless extensive tertiary treatment is attached a % of water will be removed and thus replacement is required.</p>
+                            <p>Seawater must be continually changed daily to maintain and reconstituted to maintain the corect salinity and chemical balance water exchange is usually at between 2-5% on gross system volume per day.</p>
+                            <p>Grading, harvesting fish health management also requires displacement of water to discharge from tanks in and therefore additional water is required.</p>
+                            <p>Cleaning , washing of facilities, culture tanks, equipment, filtration backwashing, plumbing lines, and staff amenities all takes the use of either fresh or seawater daily that has to be added and removed.</p>
+                            <p>Where does this water go?</p>
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/1.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/2.jpg">
+                            </div>
+                            <p>Eventual a % must go to the external environment, good aquaculture operations mitigate the discharge however Zero discharge is physically impossible.</p>
+                            <p>Dedicated waste treatment is mandatory, however at some time these operations become full and thus discharge to the external environment is inevitable, the aim is to mitigate such discharge as to not contain high levels of nutrients or bacterial waste thru the use of high level biological filtration, Hydroponics/Aquaponics that can remove a % of ammonia and complete the denitrifying process and waste management systems that can remove successfully solid waste so discharge waters meet the environmental guidelines for water discharge to the environment.</p>
+                            <p>ECO waste management incorporate multiple waste treatment operations in that attention is given in a collective procedure to as to biological denitrifying, collection of suspended and settable solids with the ability to reuse of high % of treated waters after disinfection in both freshwater and marine operations. Reuse is limited to individual systems to maintain biosecurity and remove cross.</p>
+                            <p>Hydroponics are a logical and profitable addition supplying a wide variety of terrestrial vegetables, flowers and herbs in freshwater operations but can be limited by space dependent upon overall system sizing and can only be applied to a specific individual system.</p>
+                            <p>Aquaponics can also be included but more as to support value adding options in that of growing other aquatic species such as seaweed, abalone, shrimp, shell fish.</p>
+                            <p>During the concept and design planning phase of any aquaculture proposal ECO addresses the criteria required by respective Government/Authorities as to waste management discharge including sedimentation and nutrient set l control levels and apply the design options/requirements specific to the operational design.</p>
+
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/3.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="card">-->
+                    <!--<div class="card-header" role="tab" id="headingTwo2">-->
+                        <!--<h5 class="mb-0">-->
+                            <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+                                <!--HYDROPONICS (AQUAPONICS)-->
+                            <!--</a>-->
+                        <!--</h5>-->
+                    <!--</div>-->
+                    <!--<div id="collapseTwo2" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">-->
+                        <!--<div class="card-block">-->
+                            <!--<div style="display: inline-block;width: 70%">-->
+                                <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.-->
+                                <!--<br>-->
+                                <!--3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.-->
+                                <!--<br>-->
+                                <!--Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.-->
+                                <!--<br>-->
+                                <!--Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+                                <!--<br>-->
+                                <!--Ad vegan excepteur butcher vice lomo.-->
+                                <!--<br>-->
+                                <!--Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
+                            <!--</div>-->
+                            <!--<img style="float: right" src="./Static/img/product/RAS%20Technology%20Systems/4.jpg">-->
+
+                        <!--</div>-->
+                    <!--</div>-->
                 <!--</div>-->
-                <!--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">-->
-                    <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-                    <!--<span class="sr-only">Previous</span>-->
-                <!--</a>-->
-                <!--<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">-->
-                    <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-                    <!--<span class="sr-only">Next</span>-->
-                <!--</a>-->
-                <!---->
-            <!--</div>-->
+                <!--<div class="card">-->
+                    <!--<div class="card-header" role="tab" id="headingThree2">-->
+                        <!--<h5 class="mb-0">-->
+                            <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+                                <!--A TYPICAL MODEL RAS-->
+                            <!--</a>-->
+                        <!--</h5>-->
+                    <!--</div>-->
+                    <!--<div id="collapseThree2" class="collapse show" role="tabpanel" aria-labelledby="headingThree">-->
+                        <!--<div class="card-block">-->
+                            <!--<img src="./Static/img/product/RAS%20Technology%20Systems/5.jpg">-->
+                            <!--<img src="./Static/img/product/RAS%20Technology%20Systems/6.jpg">-->
 
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="tab-pane" id="RCS" role="tabpanel">
+            <div id="accordion3" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne3">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                                Refrigeration/cooling System
+                            </a>
+                        </h5>
+                    </div>
 
+                    <div id="collapseOne3" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+
+                            <div>
+                                <img style="width: 900px;height: 500px" src="./Static/img/product/CRS/2.bmp">
+                            </div>
+
+                            <p>Eco  design and supply all cold storages high ,medium ,and low temp. for food ,fruit ,vegetables ,meat ,and medicine etc.</p>
+                            <p>We offering the whole package solution to meet your specific application.</p>
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/CRS/3.bmp">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/CRS/4.bmp">
+                            </div>
+
+                            <table class="table table-striped table-hover">
+                                <thead class="thead-inverse">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Thickness of cold storage panel</th>
+                                    <th>Application temperature</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>50mm</td>
+                                    <td>Temperature 5°C or above</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>75mm</td>
+                                    <td>Temperature -5°C or above</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>100mm</td>
+                                    <td>Temperature -15°C or above</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>120mm</td>
+                                    <td>Temperature -25°C or above</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>150mm</td>
+                                    <td>Temperature -35°C or above</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>200mm</td>
+                                    <td>Temperature -45°C or above</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div>
+                                <img style="width: 900px;height: 500px" src="./Static/img/product/CRS/1.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane" id="RAS" role="tabpanel">
 
             <img src="./Static/img/product/RAS%20Technology%20Systems/1.jpg">
 
@@ -629,13 +769,14 @@
         <div class="tab-pane" id="AB" role="tabpanel">
             <div class="card-group">
                 <div class="card">
-                    <img class="card-img-top" src="./Static/img/product/Air%20Blowers/HB-639.jpg" style="width: 350px;height: 250px;" alt="Card image cap">
+                    <img class="card-img-top" src="./Static/img/product/Air%20Blowers/HB-639.jpg" style="width: 350px;height: 250px;" alt="Ring Blower">
                     <div class="card-block">
                         <h4 class="card-title">Ring Blower</h4>
                         <a href="#" class="btn btn-primary" onclick="showTab('RB')">Detail</a>
                     </div>
                 </div>
                 <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/Roots%20Blower/1.jpg" style="width: 350px;height: 250px;" alt="Roots Blower">
                     <div class="card-block">
                         <h4 class="card-title">Roots Blower</h4>
                         <a href="#" class="btn btn-primary" onclick="showTab('RB2')">Detail</a>
@@ -781,7 +922,731 @@
 
         </div>
 
+        <div class="tab-pane" id="Air_stones" role="tabpanel">
+            <div id="accordion4" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne4">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                                Air Stones
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne4" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div>
+                                <img style="width: 900px;height: 500px" src="./Static/img/product/Air%20Stones/3.jpg">
+                            </div>
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Air%20Stones/1.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Air%20Stones/2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo4">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                                Features
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo4" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                                <p>1.After doing the extrusion molding with special materials, the product is made at high temperature 1500℃.</p>
+                                <p>2. Oxygen consumption is low and fusion rate is high, air spout even , bubble size of carborundum air stone is between 300-500 microns, the effect of white corundum and green carbon is better , whose bubble size is between 200-300 microns.</p>
+                                <p>3. High quality in competitive price</p>
+                            <img src="./Static/img/product/Air%20Stones/4.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree4">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                                Applications
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree4" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block">
+                            <p>1.Oxygenation for transportation of live fish and seafood.</p>
+                            <p>2.Waste water treatment in industry factory, cleansing in water fountains.</p>
+                            <p>3.Gardening and planting, decorating the aquarium.</p>
+                            <p>4.Durable airstone diffuses water in every direction, creating dazzling underwater scenes .</p>
+                            <img style="width: 450px;height: 400px;" src="./Static/img/product/Air%20Stones/5.bmp">
+                            <img style="width: 450px;height: 400px;" src="./Static/img/product/Air%20Stones/6.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <div class="tab-pane" id="Aerators" role="tabpanel">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/Aerators/Impeller%20aerator/1.jpg" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">Impeller aeratorr</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('Impeller_aeratorr')">Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Eight-Impeller%20paddle%20wheel%20aerator.jpg" style="width: 350px;height: 250px;" alt="Roots Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">Paddel wheel aerator</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('Paddel_wheel_aerator')">Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/Aerators/Waving%20surge%20aerator/1.jpg" style="width: 350px;height: 250px;" alt="Roots Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">Waving surge aerator</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('Waving_surge_aerator')">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="tab-pane" id="Impeller_aeratorr" role="tabpanel">
+            <div id="accordion5" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne5">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
+                                Impeller aeratorr
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne5" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div>
+                                <img src="./Static/img/product/Aerators/Impeller%20aerator/1.jpg">
+                                <img src="./Static/img/product/Aerators/Impeller%20aerator/2.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane" id="Waving_surge_aerator" role="tabpanel">
+            <div id="accordion6" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne6">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne6" aria-expanded="true" aria-controls="collapseOne6">
+                                Impeller aeratorr
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne6" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div>
+                                <img src="./Static/img/product/Aerators/Waving%20surge%20aerator/1.jpg">
+                                <img src="./Static/img/product/Aerators/Waving%20surge%20aerator/2.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane" id="Paddel_wheel_aerator" role="tabpanel">
+            <div id="accordion7" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne7">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne7">
+                                Paddel wheel aerator
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne7" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+
+                            <div class="card-group">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Eight-Impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Ring Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Eight-Impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Four-Impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Four-Impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/HTB1xzciKVXXXXbjXFXXq6xXFXXX7.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">HTB1xzciKVXXXXbjXFXXq6xXFXXX7</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Multi-impeller%20paddle%20wheel%20aerator%20(2).jpg" style="width: 230px;height: 150px;" alt="Ring Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Multi-impeller paddle wheel aerator (2)</h4>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Multi-impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Multi-impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/ProfiDrum1%20(1).jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">ProfiDrum1 (1)</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/ProfiDrum1.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">ProfiDrum1</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Six-Impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Ring Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Six-Impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Twelve-impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Twelve-impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Two-Impeller%20paddle%20wheel%20aerator.bmp" style="width: 230px;height: 150px;" alt="Ring Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Two-Impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Two-Impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Twelve-impeller paddle wheel aerator</h4>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="Oxygen_Cones" role="tabpanel">
+            <div id="accordion8" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne8">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne8" aria-expanded="true" aria-controls="collapseOne8">
+                                Application
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne8" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <p>Large-scale factory aquaculture farms, sea water nursery field, large aquaculture holding base, aquarium, aquarium and so on.</p>
+
+                                <img style="width: 900px;height:900px;" src="./Static/img/product/Oxygen%20Cone/2.bmp">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo8">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo8" aria-expanded="false" aria-controls="collapseTwo8">
+                                Features & Advantages
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo8" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <p>◎ high efficiency and durability, high oxygen utilization</p>
+                            <p>◎ series of products to meet different needs</p>
+                            <p>◎ specially designed for high density aquaculture</p>
+
+
+                            <img style="width: 900px;height: 500px" src="./Static/img/product/Oxygen%20Cone/1.png">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane" id="Protein_skimmers" role="tabpanel">
+            <div id="accordion9" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne9">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9">
+                                Functions
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne9" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <img style="width: 700px;height:700px;" src="./Static/img/product/Protein%20Skimmer/protein%20skimmer.bmp">
+
+                            <p>Removing organism such as night soil, colloid etc, for reducing the load of biological</p> 
+                            <p>treatment and ensuring the water quality.</p>
+                            <p>Increasing the dissolved oxygen in water, for improving the biological treatment efficiency.</p>
+                            <p>Removing the harmful air in water, stabilize the PH in water.</p>
+                            <p>Mixing ozone in water also has the function of sterilization, disinfect ion and remove algae in water.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo9">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo9" aria-expanded="false" aria-controls="collapseTwo9">
+                                Appliance
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo9" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            	<p>Sea or fresh water treatment</p>
+                            	<p>Seafood cultivating factory </p>
+                            	<p>Seawater hatcheries</p>
+                            	<p>Oceanopolis, aquarium etc</p>
+                            	<p>Swimming pool water treatment</p>
+                            	<p>Sewage water treatment, and the lines used for ozone mixing in water</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="Filters" role="tabpanel">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/Filters/DRUM%20FILTER/1.jpg" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">DRUM FILTER</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('DRUM_FILTER')">Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/Filters/SAND%20FILTER/1.bmp" style="width: 350px;height: 250px;" alt="Roots Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">SAND FILTER</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('SAND_FILTER')">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane" id="DRUM_FILTER" role="tabpanel">
+            <div id="accordion10" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne10">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne10" aria-expanded="true" aria-controls="collapseOne10">
+                                Features
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne10" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <img style="width: 700px;height:700px;" src="./Static/img/product/Filters/DRUM%20FILTER/1.jpg">
+
+                            <p>1.Use with high quality plastic material and SS316L mesh, corrosion resistance and durable.</p>
+                            <p>2.Use SS316L mesh with small size aperture, low resistance and high discharge capacity.</p>
+                            <p>3.With auto back washing function to ensure system is working properly.</p>
+                            <p>4.Low power consumption, high efficiency, easy operation and maintenance.</p>
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Filters/DRUM%20FILTER/2.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Filters/DRUM%20FILTER/3.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo10">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo10" aria-expanded="false" aria-controls="collapseTwo10">
+                                Application
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo10" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <p>1.Suitable used for pre-solid-liquid separation processing of aquaculture raw water treatment.</p>
+                            <p>2.Suitable used for pre-solid-liquid separation processing of aquaculture industrial water treatment.</p>
+                            <p>3.Widely used in various lines which required pre-solid-liquid separation. Such as urban</p>
+                            <p>sewage water, paper, textile, printing and dyeing, chemical and sewage etc.</p>
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Filters/DRUM%20FILTER/4.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Filters/DRUM%20FILTER/5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane" id="SAND_FILTER" role="tabpanel">
+            <div id="accordion11" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne11">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne11">
+                                Product Features
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne11" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Filters/SAND%20FILTER/1.bmp">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Filters/SAND%20FILTER/2.jpg">
+                            </div>
+
+                            <p>1. FRP material: anti-corrosive and durable;</p>
+                             <p>2. Specially designed for aquaculture industry and swimming pool; </p>
+                            <p>3. High pressure resistance, easily to use and replace of sands; </p>
+                            <p>4. Suitable for space limited using, and intuitive check water quality.</p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="Biofilter_Media" role="tabpanel">
+            <div id="accordion12" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne12">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne12">
+                                Applications
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne12" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/1.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/2.jpg">
+                            </div>
+
+                            <p>• Sewage treatment</p>
+                            <p> • Aquaculture farms </p>
+                            <p>• Koi filters</p>
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/3.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/4.jpg">
+                            </div>
+
+                            <p>MBBR biofilm carrier can be used in both aerobic process and anaerobic process.</p>
+                            <p>MBBR is a cost-effective solution for existing activated sludge plants that need more advanced treatment. </p>
+                            <p>Because little or no additional tankage is required, it is an ideal solution for plants with limited space for expansion. </p>
+                            <p>It is also an excellent choice for space efficient, high performance new plant designs. </p>
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/5.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/6.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="Ozone_and_Oxygen_generations" role="tabpanel">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/1.bmp" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">oxygen generator</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('oxygen_generator')">Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/1.jpg" style="width: 350px;height: 250px;" alt="Roots Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">ozone generator</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('ozone_generator')">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane" id="oxygen_generator" role="tabpanel">
+            <div id="accordion13" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne13">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne13" aria-expanded="true" aria-controls="collapseOne13">
+                                CHARACTERISTICS
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne13" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/1.bmp">
+
+                            <p>•	High oxygen concentration and output pressure</p>
+                            <p>•	Apply PSA oxygen technology, using clean dry air as raw material, with low cost, low power consumption but high effeciency</p>
+                            <p>•	Simple reliable and easy maintance</p>
+                            <p>•	Small and light weight, easy operation</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo13">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo13" aria-expanded="false" aria-controls="collapseTwo13">
+                                Application
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo13" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+
+                            <img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/2.bmp">
+
+                            <p>Fish farming </p>
+                            <p>Paper and Pulp industries </p>
+                            <p>Glass industries</p>
+                            <p> Metallurgical industries</p>
+                            <p> Chemical industries</p>
+                            <p> Water and Wastewater treatment </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane" id="ozone_generator" role="tabpanel">
+            <div id="accordion14" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne14">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14">
+                                Features
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne14" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/1.jpg">
+
+
+                            <p>Advanced corona discharge technology</p>
+                            <p> ◆ Optimized mechanical design</p>
+                            <p>Advanced IGBT power supply unit</p>
+                            <p>◆ low harmonic pollution</p>
+                            <p>◆ low energy consumption</p>
+                            <p>◆ high ozone concentration, strong and durable</p>
+                            <p>◆ compact structure</p>
+                            <p>◆ low maintenance workload</p>
+                            <p>◆ Automated interface control</p>
+                            <p>◆ Discharge body</p>
+                              <p>Ozone discharge chamber with quartz tube discharge body, the discharge of ozone production, </p>
+                            <p>high ozone concentration, to maximize the power system and cooling system functions, </p>
+                            <p>is the key to high-yield high-concentration ozone generator.</p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo14">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo14" aria-expanded="false" aria-controls="collapseTwo14">
+                                Application
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo14" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/2.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/3.bmp">
+                            </div>
+                           <p>Aquaculture, water treatment, sewage treatment, waste gas treatment,food and beverage processing,</p>
+                            <p>refrigeration and other commercial and medical And industrial ozone applications and so on.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="UV_water_sterilization_units" role="tabpanel">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/UV/Ultraqua/1.JPG" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">Ultraqua</h4>
+                        <a href="#" class="btn btn-primary" onclick="showTab('Ultraqua')">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane" id="Ultraqua" role="tabpanel">
+            <div id="accordion15" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne15">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15">
+                                AQUACULTURE UV SYSTEMS
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne15" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+
+                            <img style="width: 700px;height:700px;" src="./Static/img/product/UV/Ultraqua/1.JPG">
+
+                            <p>UV systems have been chosen to increase security</p>
+                            <p>from infectious diseases in millions of salmon, sturgeons, eels, tur-</p>
+                            <p>bot, sea bass produced in aquaculture systems worldwide. Here our</p>
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/2.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/3.bmp">
+                            </div>
+                            <p>UV systems help increase FCR, and drasticly reduce the use of</p>
+                            <p>antibiotics for a better and more stable production.</p>
+                            <p>Diseases such as Infectious Salmon Anaemia (ISA), Infectious Pan-</p>
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/4.bmp">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/5.bmp">
+                            </div>
+                            <p>creatic Necrosis (IPN) and Amoebic gill disease (AGD) are being pre-</p>
+                            <p>vented with the use of reliable UV systems. This have given the</p>
+                            <p>fish farms security and reassurance that their fish are not infected,</p>
+                            <p>thereby protecting millions of invested dollars.</p>
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/6.bmp">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/7.bmp">
+                            </div>
+                            <p>We know that fish farms are not always the most clean and friendly environment for</p>
+                            <p>equipment. This is why it is important to choose a quality UV system, which have</p>
+                            <p>proved functional over many years of operation. By choosing a ULTRAAQUA UV system</p>
+                            <p>you are certain to get one of the most thoroughly tested and reliable UV systems for</p>
+                            <p>aquaculture.</p>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="Feeding_machine" role="tabpanel">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/feeding%20machine/fish%20feeding%20machine.bmp" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">fish feeding machine</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./Static/img/product/feeding%20machine/shrimp%20Auto%20feeder.jpg" style="width: 350px;height: 250px;" alt="Roots Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">shrimp Auto feeder</h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
     </div>
 </div>
 <footer class="footer"><a style="color: white;line-height: 61px;">Developed by Angus Cai.</a></footer>
