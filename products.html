@@ -6,6 +6,7 @@
     <title>Products</title>
 
     <link rel="stylesheet" href="Static/css/bootstrap.min.css">
+    <script src="Static/js/jquery.min.js"></script>
 
     <style>
         html,body{
@@ -62,9 +63,9 @@
             list-style-type: none;
         }
 
-        #leftDiv ul li:hover ul{
-            display: block;
-        }
+        /*#leftDiv ul li:hover ul{*/
+            /*display: block;*/
+        /*}*/
 
         #leftDiv li a{
             color: #444;
@@ -86,17 +87,22 @@
             height: 400px;
         }
 
-        
+
     </style>
 
     <script>
+        var log = console.log.bind(console)
+
         function showTab(name) {
             $('a[href="#'+name+'"]').tab('show') // Select tab by name
         }
 
-//        $(function () {
-//            $('#myTab a:last').tab('show')
-//        })
+        $(function(){
+            $('#leftDiv ul li a').click(function () {
+                log("进入方法")
+                $(this).parent().children("ul").toggle();
+            })
+        })
     </script>
 
 </head>
@@ -186,7 +192,7 @@
                                 <li><a onclick="showTab('Filters')" href="#">Filters</a></li>
                                 <li><a onclick="showTab('Biofilter_Media')" href="#">Biofilter Media</a></li>
                                 <li><a onclick="showTab('Ozone_and_Oxygen_generations')" href="#">Ozone and Oxygen generations</a></li>
-                                <li><a onclick="showTab('UV_water_sterilization_units')" href="#">UV water sterilization units</a></li>
+                                <li><a onclick="showTab('Ultraqua')" href="#">UV water sterilization units</a></li>
                                 <li><a href="#">Hatchery Equipment</a></li>
                                 <li><a onclick="showTab('Feeding_machine')" href="#">Feeding machine</a></li>
                             </ul>
@@ -214,7 +220,7 @@
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Ozone_and_Oxygen_generations" role="tab"></a></li>
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#oxygen_generator" role="tab"></a></li>
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#ozone_generator" role="tab"></a></li>
-                        <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#UV_water_sterilization_units" role="tab"></a></li>
+                        <!--<li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#UV_water_sterilization_units" role="tab"></a></li>-->
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Ultraqua" role="tab"></a></li>
                         <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Feeding_machine" role="tab"></a></li>
 
@@ -254,9 +260,45 @@
                     <div id="collapseOne2" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
 
-                            <div>
-                                <img style="width: 900px;height: 500px" src="./Static/img/product/WasteWater/5.jpg">
+
+                            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/WasteWater/1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/WasteWater/2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/WasteWater/3.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/WasteWater/4.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/WasteWater/5.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
+
+                            <!--<div>-->
+                                <!--<img style="width: 900px;height: 500px" src="./Static/img/product/WasteWater/5.jpg">-->
+                            <!--</div>-->
 
                             <p>All recirculation systems (RAS) intake and discharge water whether it be freshwater or salt water at one time or another.</p>
                             <p>Fish displace water as they grow and this water must go somewhere, all systems have a designed water area/m3 therefore a fish biomass increases water is displaced to make wy for increased fish weight.</p>
@@ -265,10 +307,10 @@
                             <p>Grading, harvesting fish health management also requires displacement of water to discharge from tanks in and therefore additional water is required.</p>
                             <p>Cleaning , washing of facilities, culture tanks, equipment, filtration backwashing, plumbing lines, and staff amenities all takes the use of either fresh or seawater daily that has to be added and removed.</p>
                             <p>Where does this water go?</p>
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/1.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/2.jpg">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/1.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/2.jpg">-->
+                            <!--</div>-->
                             <p>Eventual a % must go to the external environment, good aquaculture operations mitigate the discharge however Zero discharge is physically impossible.</p>
                             <p>Dedicated waste treatment is mandatory, however at some time these operations become full and thus discharge to the external environment is inevitable, the aim is to mitigate such discharge as to not contain high levels of nutrients or bacterial waste thru the use of high level biological filtration, Hydroponics/Aquaponics that can remove a % of ammonia and complete the denitrifying process and waste management systems that can remove successfully solid waste so discharge waters meet the environmental guidelines for water discharge to the environment.</p>
                             <p>ECO waste management incorporate multiple waste treatment operations in that attention is given in a collective procedure to as to biological denitrifying, collection of suspended and settable solids with the ability to reuse of high % of treated waters after disinfection in both freshwater and marine operations. Reuse is limited to individual systems to maintain biosecurity and remove cross.</p>
@@ -277,57 +319,13 @@
                             <p>During the concept and design planning phase of any aquaculture proposal ECO addresses the criteria required by respective Government/Authorities as to waste management discharge including sedimentation and nutrient set l control levels and apply the design options/requirements specific to the operational design.</p>
 
 
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/3.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/4.jpg">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/3.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/4.jpg">-->
+                            <!--</div>-->
                         </div>
                     </div>
                 </div>
-                <!--<div class="card">-->
-                    <!--<div class="card-header" role="tab" id="headingTwo2">-->
-                        <!--<h5 class="mb-0">-->
-                            <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
-                                <!--HYDROPONICS (AQUAPONICS)-->
-                            <!--</a>-->
-                        <!--</h5>-->
-                    <!--</div>-->
-                    <!--<div id="collapseTwo2" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">-->
-                        <!--<div class="card-block">-->
-                            <!--<div style="display: inline-block;width: 70%">-->
-                                <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.-->
-                                <!--<br>-->
-                                <!--3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.-->
-                                <!--<br>-->
-                                <!--Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.-->
-                                <!--<br>-->
-                                <!--Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
-                                <!--<br>-->
-                                <!--Ad vegan excepteur butcher vice lomo.-->
-                                <!--<br>-->
-                                <!--Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.-->
-                            <!--</div>-->
-                            <!--<img style="float: right" src="./Static/img/product/RAS%20Technology%20Systems/4.jpg">-->
-
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="card">-->
-                    <!--<div class="card-header" role="tab" id="headingThree2">-->
-                        <!--<h5 class="mb-0">-->
-                            <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
-                                <!--A TYPICAL MODEL RAS-->
-                            <!--</a>-->
-                        <!--</h5>-->
-                    <!--</div>-->
-                    <!--<div id="collapseThree2" class="collapse show" role="tabpanel" aria-labelledby="headingThree">-->
-                        <!--<div class="card-block">-->
-                            <!--<img src="./Static/img/product/RAS%20Technology%20Systems/5.jpg">-->
-                            <!--<img src="./Static/img/product/RAS%20Technology%20Systems/6.jpg">-->
-
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
             </div>
         </div>
         <div class="tab-pane" id="RCS" role="tabpanel">
@@ -344,17 +342,48 @@
                     <div id="collapseOne3" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
 
-                            <div>
-                                <img style="width: 900px;height: 500px" src="./Static/img/product/CRS/2.bmp">
+                            <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/CRS/1.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/CRS/2.bmp" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/CRS/3.bmp" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/CRS/4.bmp" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
+
+                            <!--<div>-->
+                                <!--<img style="width: 900px;height: 500px" src="./Static/img/product/CRS/2.bmp">-->
+                            <!--</div>-->
 
                             <p>Eco  design and supply all cold storages high ,medium ,and low temp. for food ,fruit ,vegetables ,meat ,and medicine etc.</p>
                             <p>We offering the whole package solution to meet your specific application.</p>
 
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/CRS/3.bmp">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/CRS/4.bmp">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/CRS/3.bmp">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/CRS/4.bmp">-->
+                            <!--</div>-->
 
                             <table class="table table-striped table-hover">
                                 <thead class="thead-inverse">
@@ -399,9 +428,9 @@
                                 </tbody>
                             </table>
 
-                            <div>
-                                <img style="width: 900px;height: 500px" src="./Static/img/product/CRS/1.png">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 900px;height: 500px" src="./Static/img/product/CRS/1.png">-->
+                            <!--</div>-->
 
                         </div>
                     </div>
@@ -425,6 +454,7 @@
 
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
+
                             <p>Technology proven in both freshwater and marine closed environment RAS systems that is fully adaptable for use with commercial water, low or poor freshwater or seawater supplies, providing reduced exchange rates and high quality water intake thru proven water pre-treatment filtration programs and recirculation water waste management.</p>
 
                             <p>Innovative  technology and  basic SOPs (Standard Operating Programs) associated with the Barrablue Technology that ensures economic returns, at all times conserving, maintaining and protecting the natural environment and minimising depletion of our natural water resources.</p>
@@ -494,273 +524,554 @@
         </div>
 
         <div class="tab-pane" id="Aerotubes" role="tabpanel">
-            <img src="./Static/img/product/Aerotubes.jpg" alt="">
 
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#Aerotubes1" role="tab">Details</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#Aerotubes2" role="tab">Technical parameter & curv</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#Aerotubes3" role="tab">Advantages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#Aerotubes4" role="tab">Applications</a>
-                </li>
-            </ul>
+            <div id="accordion17" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne17">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne16" aria-expanded="true" aria-controls="collapseOne17">
+                                Aerotube
+                            </a>
+                        </h5>
+                    </div>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane fade active show" id="Aerotubes1" role="tabpanel">
-                    Application
-                    <br>
-                    Used to make the dissolved oxygen in the water reach higher amount and enhance the stocking density. Apply to aquaculture, sewage treatment, garden irrigation, greenhouse grow.
-                    <br>
-                    Tube
-                    <br>
-                    Rubber aeration tube
-                    <br>
-                    Cold resistance(-40°C,8h)
-                    <br>
-                    Tensile length ≥2.2 Mpa
-                    <br>
-                    Tensile elongation ≥130 percent
-                    <br>
-                    Hot empty aging (70°C 72h)
-                    <br>
-                    Tensile strength rate ≤20 percent
-                    <br>
-                    Break elongation rate ≤20 percent
-                    <br>
-                    Resist 5% NaOH (23°C 72h)
-                    <br>
-                    Tensile strength rate ≤20 percent
-                    <br>
-                    Break elongation rate ≤20 percent
-                    <br>
-                    Resist 5% HCl (23°C 72h)
-                    <br>
-                    Tensile strength rate ≤20 percent
-                    <br>
-                    Break elongation rate ≤20 percent
-                    <br>
-                    Pressure
-                    <br>
-                    s-1 200Kpa
-                    <br>
-                    (water seepage amount) 600-800ml/h.m
-                    <br>
-                    s-2 200Kpa
-                    <br>
-                    (water seepage amount) 10.8l/h.m
-                    <br>
-                    200Kpa increase Oxygen amount 420ml/h.m
-                    <br>
-                    Model	Outer Diameter(mm)	Wall thickness(mm)	Inside(mm)	Weight(g/m)	Meter/bundle
-                    <br>
-                    BA1015	10	1.5	7	45	200
-                    <br>
-                    BA1425	14	2.5	9	90	200
-                    <br>
-                    BA1630	16	3	10	115	200
-                    <br>
-                    BA1835	18	3.5	11	150	200
-                    <br>
-                    BA2035	20	3.5	13	160	100
-                    <br>
-                    BA2140	21	4	13	200	100
-                    <br>
-                    BA2240	22	4	14	205	100
-                    <br>
-                    BA2540	25	4	17	240	100
-                    <br>
-                    BA2550	25	5	15	295	100
-                    <br>
-                    BA2560	25	6	13	310	100
-                    <br>
-                    BA2570	25	7	11	335	100
-                    <br>
-                    BA2840	28	4	20	290	100
-                    <br>
-                    BA2860	28	6	16	340	100
-                    <br>
-                    Product performance parameters:
-                    <br>
-                    Outer Diameter: 10 to 28 mm
-                    <br>
-                    Wall thickness: 2 mm above
-                    <br>
-                    The bubble diameter: 20-50 um
-                    <br>
-                    Dynamic power: 02 / kw. Hr
-                    <br>
-                    The air flow: 3-12 cubic meters/HRM
-                    <br>
-                    Applicable water depth: 0-6 meters
-                    <br>
-                    Vortex air pump: effective water depth about 1 meter , housed density 1-2 times improve.
-                    <br>
-                    Centrifugal pump: effective water depth about 2-3 meters, stocking density improve 3-4 times.
-                    <br>
-                    Cottonwood ROM watts fan: effective 3-10 metres above water depth, the effective length can reach 300 m, stocking density can be reached 3-6 times.
-                    <br>
-                    Note: no matter you use which kinds of models of air pump, and the pipe section sum is not greater than the total area of main section. If the unclear place, can inquire!
-                </div>
+                    <div id="collapseOne17" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <!--<div>-->
+                                <!--<img src="./Static/img/product/Aerotubes.jpg" alt="">-->
+                            <!--</div>-->
 
-                <div class="tab-pane fade" id="Aerotubes2" role="tabpanel">
-                    Model	Outer Diameter(mm)	Wall thickness(mm)	Inside(mm)	Weight(g/m)	Meter/bundle
-                    <br>
-                    BA1015	10	1.5	7	45	200
-                    <br>
-                    BA1425	14	2.5	9	90	200
-                    <br>
-                    BA1630	16	3	10	115	200
-                    <br>
-                    BA1835	18	3.5	11	150	200
-                    <br>
-                    BA2035	20	3.5	13	160	100
-                    <br>
-                    BA2140	21	4	13	200	100
-                    <br>
-                    BA2240	22	4	14	205	100
-                    <br>
-                    BA2540	25	4	17	240	100
-                    <br>
-                    BA2550	25	5	15	295	100
-                    <br>
-                    BA2560	25	6	13	310	100
-                    <br>
-                    BA2570	25	7	11	335	100
-                    <br>
-                    BA2840	28	4	20	290	100
-                    <br>
-                    BA2860	28	6	16	340	100
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src="./Static/img/product/Aerotubes/1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/Aerotubes/2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/Aerotubes/3.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/Aerotubes/4.jpg" alt="Fourth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/Aerotubes/5.jpg" alt="Fifth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/Aerotubes/6.PNG" alt="Sixth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/Aerotubes/7.jpg" alt="Seventh slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+
+                            <strong>ECO Aquaculture</strong> is a manufacturer of porous hoses for water aeration and subsurface irrigation,
+                            <br>
+                            with operations throughout Brazil and abroad. We main focus is the development of innovative technologies that offer excellent performance and value for money.
+                            <br>
+                            customers are fish and shrimp farmers, landscapers, architects, farmers, irrigation and aeration stores.
+                            <hr>
+
+                            <strong>Application</strong>
+
+                            Used to make the dissolved oxygen in the water reach higher amount and enhance the stocking density. Apply to aquaculture, sewage treatment, garden irrigation, greenhouse grow.
+                            <br>
+                            <hr>
+                            <strong>Tube</strong>
+                            <br>
+                            Rubber aeration tube
+                            <br>
+                            <strong>Cold resistance</strong>(-40°C,8h)
+                            <br>
+                            Tensile length ≥2.2 Mpa
+                            <br>
+                            Tensile elongation ≥130 percent
+                            <br>
+                            <strong>Hot empty aging</strong>(70°C 72h)
+                            <br>
+                            Tensile strength rate ≤20 percent
+                            <br>
+                            Break elongation rate ≤20 percent
+                            <br>
+                            <strong>Resist 5% NaOH</strong>(23°C 72h)
+                            <br>
+                            Tensile strength rate ≤20 percent
+                            <br>
+                            Break elongation rate ≤20 percent
+                            <br>
+                            <strong>Resist 5% HCl</strong>(23°C 72h)
+                            <br>
+                            Tensile strength rate ≤20 percent
+                            <br>
+                            Break elongation rate ≤20 percent
+                            <br>
+                            <strong>Pressure</strong>
+                            <br>
+                            s-1 200Kpa
+                            <br>
+                            (water seepage amount) 600-800ml/h.m
+                            <br>
+                            s-2 200Kpa
+                            <br>
+                            (water seepage amount) 10.8l/h.m
+                            <br>
+                            200Kpa increase Oxygen amount 420ml/h.m
+                            <hr>
+                            <h4>Product performance parameters:</h4>
+
+                            Outer Diameter: 10 to 28 mm
+                            <br>
+                            Wall thickness: 2 mm above
+                            <br>
+                            The bubble diameter: 20-50 um
+                            <br>
+                            Dynamic power: 02 / kw. Hr
+                            <br>
+                            The air flow: 3-12 cubic meters/HRM
+                            <br>
+                            Applicable water depth: 0-6 meters
+                            <br>
+                            Vortex air pump: effective water depth about 1 meter , housed density 1-2 times improve.
+                            <br>
+                            Centrifugal pump: effective water depth about 2-3 meters, stocking density improve 3-4 times.
+                            <br>
+                            Cottonwood ROM watts fan: effective 3-10 metres above water depth, the effective length can reach 300 m, stocking density can be reached 3-6 times.
+                            <br>
+                            Note: no matter you use which kinds of models of air pump, and the pipe section sum is not greater than the total area of main section. If the unclear place, can inquire!
+
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="Aerotubes3" role="tabpanel">
-                    1) Green patent product
-                    <br>
-                    2) Efficient increasing oxygen
-                    <br>
-                    3) Acid and alkali resistance, ageing resistance
-                    <br>
-                    4) Aeration uniform
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo17">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo17" aria-expanded="false" aria-controls="collapseTwo17">
+                                Technical parameter & curve
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo17" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead-inverse">
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Outer Diameter(mm)</th>
+                                    <th>Wall thickness(mm)</th>
+                                    <th>Inside(mm)</th>
+                                    <th>Weight(g/m)</th>
+                                    <th>Meter/bundle</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>BA1015</td>
+                                    <td>10</td>
+                                    <td>1.5</td>
+                                    <td>7</td>
+                                    <td>45</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>BA1425</td>
+                                    <td>14</td>
+                                    <td>2.5</td>
+                                    <td>9</td>
+                                    <td>90</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>BA1630</td>
+                                    <td>16</td>
+                                    <td>3</td>
+                                    <td>10</td>
+                                    <td>115</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>BA1835</td>
+                                    <td>18</td>
+                                    <td>3.5</td>
+                                    <td>11</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2035</td>
+                                    <td>20</td>
+                                    <td>3.5</td>
+                                    <td>13</td>
+                                    <td>160</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2140</td>
+                                    <td>21</td>
+                                    <td>4</td>
+                                    <td>13</td>
+                                    <td>200</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2240</td>
+                                    <td>22</td>
+                                    <td>4</td>
+                                    <td>14</td>
+                                    <td>205</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2540</td>
+                                    <td>25</td>
+                                    <td>4</td>
+                                    <td>17</td>
+                                    <td>240</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2550</td>
+                                    <td>25</td>
+                                    <td>5</td>
+                                    <td>15</td>
+                                    <td>295</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2560</td>
+                                    <td>25</td>
+                                    <td>6</td>
+                                    <td>13</td>
+                                    <td>310</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2570</td>
+                                    <td>25</td>
+                                    <td>7</td>
+                                    <td>11</td>
+                                    <td>335</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2840</td>
+                                    <td>28</td>
+                                    <td>4</td>
+                                    <td>20</td>
+                                    <td>290</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>BA2860</td>
+                                    <td>28</td>
+                                    <td>6</td>
+                                    <td>16</td>
+                                    <td>340</td>
+                                    <td>100</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="Aerotubes4" role="tabpanel">
-                    Used to make the dissolved oxygen in the water reach higher amount and enhance the stocking density. Apply to aquaculture, sewage treatment, garden irrigation, greenhouse grow.
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree17">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree17" aria-expanded="false" aria-controls="collapseThree17">
+                                Advantages
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree17" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block">
+                            1) Green patent product
+                            <br>
+                            2) Efficient increasing oxygen
+                            <br>
+                            3) Acid and alkali resistance, ageing resistance
+                            <br>
+                            4) Aeration uniform
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFOUR2">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFOUR2" aria-expanded="false" aria-controls="collapseFOUR2">
+                                Applications
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFOUR2" class="collapse show" role="tabpanel" aria-labelledby="headingFOUR2">
+                        <div class="card-block">
+                            Used to make the dissolved oxygen in the water reach higher amount and enhance the stocking density.
+                            <br>
+                            Apply to aquaculture, sewage treatment, garden irrigation, greenhouse grow.
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
         <div class="tab-pane" id="MBD" role="tabpanel">
-            <h2>Tube Membrane Diffusers</h2>
-            <img src="./Static/img/product/Membrane%20bubble%20diffusers/1.jpg" style="height: 481px;width: 720px;"  alt="">
 
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#MBD1" role="tab">Details</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#MBD2" role="tab">Technical parameter & curv</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#MBD3" role="tab">Advantages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#MBD4" role="tab">Applications</a>
-                </li>
-            </ul>
+            <div id="accordion16" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne16">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne16" aria-expanded="true" aria-controls="collapseOne16">
+                                Tube Membrane Diffusers
+                            </a>
+                        </h5>
+                    </div>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane fade active show" id="MBD1" role="tabpanel">
-                    <p>
-                        <img src="./Static/img/product/Membrane%20bubble%20diffusers/2.jpg" style="width: 300px;height: 199px;" alt="">
-                        <img src="./Static/img/product/Membrane%20bubble%20diffusers/3.jpg" style="width: 300px;height: 199px;" alt="">
-                    </p>
-                    <img src="./Static/img/product/Membrane%20bubble%20diffusers/4.jpg" style="width: 700px;height: 465px;" alt="">
+                    <div id="collapseOne16" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div>
+                                <img src="./Static/img/product/Membrane%20bubble%20diffusers/1.jpg" style="width: 450px;height: 400px;" alt="">
+                                <img src="./Static/img/product/Membrane%20bubble%20diffusers/4.jpg" style="width: 450px;height: 400px;" alt="">
+                            </div>
+                            <div>
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Membrane%20bubble%20diffusers/2.jpg">
+                                <img style="width: 450px;height: 400px;" src="./Static/img/product/Membrane%20bubble%20diffusers/3.jpg">
+                            </div>
 
-                    <h3>Structure</h3>
-                    <hr>
-                    1. Non-buoyancy aeration tube design.
-                    <br>
-                    2. EPDM/ SILICONE/ TPU membrane adoption.
-                    <br>
-                    3. ABS tube diffuser support and air intake.
-                    <br>
-                    4. Germany SS304 clamps are fixed on the aeration tube membrane.
-                    <br>
-                    5. Flash board and NPT3/4''theading connections for option.
+                            <h3>Structure</h3>
+                            <hr>
+                            1. Non-buoyancy aeration tube design.
+                            <br>
+                            2. EPDM/ SILICONE/ TPU membrane adoption.
+                            <br>
+                            3. ABS tube diffuser support and air intake.
+                            <br>
+                            4. Germany SS304 clamps are fixed on the aeration tube membrane.
+                            <br>
+                            5. Flash board and NPT3/4''theading connections for option.
+
+                        </div>
+                    </div>
                 </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo16">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo16" aria-expanded="false" aria-controls="collapseTwo16">
+                                Technical parameter & curv
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo16" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead-inverse">
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Φ67mm*500mm</th>
+                                    <th>Φ67mm*750mm</th>
+                                    <th>Φ67mm*1000mm</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Working air flow (m3/h)</td>
+                                    <td>1~6</td>
+                                    <td>1~8</td>
+                                    <td>1~14</td>
+                                </tr>
+                                <tr>
+                                    <td>Designed air flow(m3/h)</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>Oxygen transform efficiency (%)</td>
+                                    <td>>35</td>
+                                    <td>>35</td>
+                                    <td>>35</td>
+                                </tr>
+                                <tr>
+                                    <td>Service area (m2/piece)</td>
+                                    <td>0.5~1</td>
+                                    <td>0.6~1.2</td>
+                                    <td>0.8~1.6</td>
+                                </tr>
+                                <tr>
+                                    <td>Bubble size(mm)</td>
+                                    <td>0.8~1.9</td>
+                                    <td>0.8~1.9</td>
+                                    <td>0.8~1.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Pressure loss (kpa)	</td>
+                                    <td>2.2~4.8</td>
+                                    <td>2.2~4.8</td>
+                                    <td>2.2~4.8</td>
+                                </tr>
+                                <tr>
+                                    <td>Oxygenate capability (kgO2/h)</td>
+                                    <td>0.6</td>
+                                    <td>0.7</td>
+                                    <td>0.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Theoretic dynamic efficency(kgO2/kw.h)</td>
+                                    <td>>8.6</td>
+                                    <td>>8.6</td>
+                                    <td>>8.6</td>
+                                </tr>
+                                <tr>
+                                    <td>Membrane service life</td>
+                                    <td>>5</td>
+                                    <td>>5</td>
+                                    <td>>5</td>
+                                </tr>
 
-                <div class="tab-pane fade" id="MBD2" role="tabpanel">
-                    Item Φ67mm*500mm	Φ67mm*750mm	Φ67mm*1000mm
-                    <br>
-                    Working air flow (m3/h)	1~6	1~8	1~14
-                    <br>
-                    Designed air flow(m3/h)	3	4	7
-                    <br>
-                    Oxygen transform efficiency (%)	>35	>35	>35
-                    <br>
-                    Service area (m2/piece)	0.5~1	0.6~1.2	0.8~1.6
-                    <br>
-                    Bubble size(mm)	0.8~1.9	0.8~1.9	0.8~1.9
-                    <br>
-                    Pressure loss (kpa)	2.2~4.8	2.2~4.8	2.2~4.8
-                    <br>
-                    Oxygenate capability (kgO2/h)	0.6	0.7	0.9
-                    <br>
-                    Theoretic dynamic efficency(kgO2/kw.h)	>8.6	>8.6	>8.6
-                    <br>
-                    Membrane service life	>5	>5	>5
-                    <br>
-                    Item	Φ90mm*500mm	Φ90mm*750mm	Φ90mm*1000mm
-                    <br>
-                    Working air flow (m3/h)	2~10	2~14	2~20
-                    <br>
-                    Designed air flow(m3/h)	5	7	10
-                    <br>
-                    Oxygen transform efficiency (%)	>35	>35	>35
-                    <br>
-                    Service area (m2/piece)	0.8~1.6	1.3~2.6	1.8~3.2
-                    <br>
-                    Bubble size(mm)	0.8~1.9	0.8~1.9	0.8~1.9
-                    <br>
-                    Pressure loss (kpa)	2.2~4.8	2.2~4.8	2.2~4.8
-                    <br>
-                    Oxygenate capability (kgO2/h)	0.65	0.85	1.4
-                    <br>
-                    Theoretic dynamic efficency(kgO2/kw.h)	>8.6	>8.6	>8.6
-                    <br>
-                    Membrane service life	>5	>5	>5
+                                </tbody>
+                            </table>
+
+                            <table class="table table-striped table-hover">
+                                <thead class="thead-inverse">
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Φ90mm*500mm</th>
+                                    <th>Φ90mm*750mm</th>
+                                    <th>Φ90mm*1000mm</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Working air flow (m3/h)</td>
+                                    <td>2~10</td>
+                                    <td>2~14</td>
+                                    <td>2~20</td>
+                                </tr>
+                                <tr>
+                                    <td>Designed air flow(m3/h)</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Oxygen transform efficiency (%)</td>
+                                    <td>>35</td>
+                                    <td>>35</td>
+                                    <td>>35</td>
+                                </tr>
+                                <tr>
+                                    <td>Service area (m2/piece)</td>
+                                    <td>0.8~1.6</td>
+                                    <td>1.3~2.6</td>
+                                    <td>1.8~3.2</td>
+                                </tr>
+                                <tr>
+                                    <td>Bubble size(mm)</td>
+                                    <td>0.8~1.9</td>
+                                    <td>0.8~1.9</td>
+                                    <td>0.8~1.9</td>
+                                </tr>
+                                <tr>
+                                    <td>Pressure loss (kpa)	</td>
+                                    <td>2.2~4.8</td>
+                                    <td>2.2~4.8</td>
+                                    <td>2.2~4.8</td>
+                                </tr>
+                                <tr>
+                                    <td>Oxygenate capability (kgO2/h)</td>
+                                    <td>0.65</td>
+                                    <td>0.85</td>
+                                    <td>1.4</td>
+                                </tr>
+                                <tr>
+                                    <td>Theoretic dynamic efficency(kgO2/kw.h)</td>
+                                    <td>>8.6</td>
+                                    <td>>8.6</td>
+                                    <td>>8.6</td>
+                                </tr>
+                                <tr>
+                                    <td>Membrane service life</td>
+                                    <td>>5</td>
+                                    <td>>5</td>
+                                    <td>>5</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="MBD3" role="tabpanel">
-                    1. Easy to install .
-                    <br>
-                    2. Low loss of pressure due to the non-buoyancy tube design.
-                    <br>
-                    3. Antomatic cleaning function to prevent blocking.
-                    <br>
-                    4. Preventing corrosion with ABS raw material .
-                    <br>
-                    5. Low maintenance and service life can be 5~10 years.
-                    <br>
-                    6. Low energy consumption.
-                    <br>
-                    7. Well packaged with foampaper in each tube piece.
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree16">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree16" aria-expanded="false" aria-controls="collapseThree16">
+                                Advantages
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree16" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block">
+                            1. Easy to install .
+                            <br>
+                            2. Low loss of pressure due to the non-buoyancy tube design.
+                            <br>
+                            3. Antomatic cleaning function to prevent blocking.
+                            <br>
+                            4. Preventing corrosion with ABS raw material .
+                            <br>
+                            5. Low maintenance and service life can be 5~10 years.
+                            <br>
+                            6. Low energy consumption.
+                            <br>
+                            7. Well packaged with foampaper in each tube piece.
+
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="MBD4" role="tabpanel">
-                    1,Municipal/industrial/human wastewater treatment.
-                    <br>
-                    2.Lagoon system.
-                    <br>
-                    3.Fishing farms aeration
-                    <br>
-                    4.Active sludge treatment
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingFOUR1">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFOUR1" aria-expanded="false" aria-controls="collapseFOUR1">
+                                Advantages
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFOUR1" class="collapse show" role="tabpanel" aria-labelledby="headingFOUR">
+                        <div class="card-block">
+                            1,Municipal/industrial/human wastewater treatment.
+                            <br>
+                            2.Lagoon system.
+                            <br>
+                            3.Fishing farms aeration
+                            <br>
+                            4.Active sludge treatment
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -771,7 +1082,7 @@
                 <div class="card">
                     <img class="card-img-top" src="./Static/img/product/Air%20Blowers/HB-639.jpg" style="width: 350px;height: 250px;" alt="Ring Blower">
                     <div class="card-block">
-                        <h4 class="card-title">Ring Blower</h4>
+                        <h4 class="card-title">Roors Blower</h4>
                         <a href="#" class="btn btn-primary" onclick="showTab('RB')">Detail</a>
                     </div>
                 </div>
@@ -1096,38 +1407,11 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/HTB1xzciKVXXXXbjXFXXq6xXFXXX7.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
-                                    <div class="card-block">
-                                        <h4 class="card-title">HTB1xzciKVXXXXbjXFXXq6xXFXXX7</h4>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Multi-impeller%20paddle%20wheel%20aerator%20(2).jpg" style="width: 230px;height: 150px;" alt="Ring Blower">
-                                    <div class="card-block">
-                                        <h4 class="card-title">Multi-impeller paddle wheel aerator (2)</h4>
-                                    </div>
-                                </div>
-                                <div class="card">
                                     <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Multi-impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
                                     <div class="card-block">
                                         <h4 class="card-title">Multi-impeller paddle wheel aerator</h4>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/ProfiDrum1%20(1).jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
-                                    <div class="card-block">
-                                        <h4 class="card-title">ProfiDrum1 (1)</h4>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/ProfiDrum1.jpg" style="width: 230px;height: 150px;" alt="Roots Blower">
-                                    <div class="card-block">
-                                        <h4 class="card-title">ProfiDrum1</h4>
-                                    </div>
-                                </div>
-
                                 <div class="card">
                                     <img class="card-img-top" src="./Static/img/product/Aerators/Paddel%20wheel%20aerator/Six-Impeller%20paddle%20wheel%20aerator.jpg" style="width: 230px;height: 150px;" alt="Ring Blower">
                                     <div class="card-block">
@@ -1378,36 +1662,76 @@
                     <div class="card-header" role="tab" id="headingOne12">
                         <h5 class="mb-0">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne11" aria-expanded="true" aria-controls="collapseOne12">
-                                Applications
+                                Biofilter Media
                             </a>
                         </h5>
                     </div>
 
                     <div id="collapseOne12" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/1.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/2.jpg">
+
+                            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" style="height: 400px;" src="./Static/img/product/BIological%20media/1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="height: 400px;" src="./Static/img/product/BIological%20media/2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="height: 400px;" src="./Static/img/product/BIological%20media/3.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="height: 400px;" src="./Static/img/product/BIological%20media/4.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="height: 400px;" src="./Static/img/product/BIological%20media/5.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="height: 400px;" src="./Static/img/product/BIological%20media/6.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
+
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/1.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/2.jpg">-->
+                            <!--</div>-->
 
                             <p>• Sewage treatment</p>
                             <p> • Aquaculture farms </p>
                             <p>• Koi filters</p>
 
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/3.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/4.jpg">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/3.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/4.jpg">-->
+                            <!--</div>-->
 
                             <p>MBBR biofilm carrier can be used in both aerobic process and anaerobic process.</p>
                             <p>MBBR is a cost-effective solution for existing activated sludge plants that need more advanced treatment. </p>
                             <p>Because little or no additional tankage is required, it is an ideal solution for plants with limited space for expansion. </p>
                             <p>It is also an excellent choice for space efficient, high performance new plant designs. </p>
 
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/5.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/6.jpg">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/5.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/BIological%20media/6.jpg">-->
+                            <!--</div>-->
 
                         </div>
                     </div>
@@ -1450,30 +1774,18 @@
 
                     <div id="collapseOne13" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
-                            <img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/1.bmp">
+
+                            <div>
+                                <img src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/1.bmp" style="width: 450px;height: 400px;" alt="">
+                                <img src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/2.bmp" style="width: 450px;height: 400px;" alt="">
+                            </div>
+
+                            <!--<img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/1.bmp">-->
 
                             <p>•	High oxygen concentration and output pressure</p>
                             <p>•	Apply PSA oxygen technology, using clean dry air as raw material, with low cost, low power consumption but high effeciency</p>
                             <p>•	Simple reliable and easy maintance</p>
                             <p>•	Small and light weight, easy operation</p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" role="tab" id="headingTwo13">
-                        <h5 class="mb-0">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo13" aria-expanded="false" aria-controls="collapseTwo13">
-                                Application
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo13" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="card-block">
-
-                            <img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/2.bmp">
-
                             <p>Fish farming </p>
                             <p>Paper and Pulp industries </p>
                             <p>Glass industries</p>
@@ -1485,6 +1797,30 @@
                     </div>
                 </div>
 
+                <!--<div class="card">-->
+                    <!--<div class="card-header" role="tab" id="headingTwo13">-->
+                        <!--<h5 class="mb-0">-->
+                            <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo13" aria-expanded="false" aria-controls="collapseTwo13">-->
+                                <!--Application-->
+                            <!--</a>-->
+                        <!--</h5>-->
+                    <!--</div>-->
+                    <!--<div id="collapseTwo13" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">-->
+                        <!--<div class="card-block">-->
+
+                            <!--<img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/2.bmp">-->
+
+                            <!--<p>Fish farming </p>-->
+                            <!--<p>Paper and Pulp industries </p>-->
+                            <!--<p>Glass industries</p>-->
+                            <!--<p> Metallurgical industries</p>-->
+                            <!--<p> Chemical industries</p>-->
+                            <!--<p> Water and Wastewater treatment </p>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
 
             </div>
 
@@ -1495,14 +1831,21 @@
                     <div class="card-header" role="tab" id="headingOne14">
                         <h5 class="mb-0">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne14" aria-expanded="true" aria-controls="collapseOne14">
-                                Features
+                                ozone generator
                             </a>
                         </h5>
                     </div>
 
                     <div id="collapseOne14" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
-                            <img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/1.jpg">
+
+                            <div>
+                                <img src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/1.jpg" style="width: 300px;height: 400px;" alt="">
+                                <img src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/2.jpg" style="width: 300px;height: 400px;" alt="">
+                                <img src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/3.bmp" style="width: 300px;height: 400px;" alt="">
+                            </div>
+
+                            <!--<img style="width: 700px;height:700px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/1.jpg">-->
 
 
                             <p>Advanced corona discharge technology</p>
@@ -1518,34 +1861,35 @@
                               <p>Ozone discharge chamber with quartz tube discharge body, the discharge of ozone production, </p>
                             <p>high ozone concentration, to maximize the power system and cooling system functions, </p>
                             <p>is the key to high-yield high-concentration ozone generator.</p>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" role="tab" id="headingTwo14">
-                        <h5 class="mb-0">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo14" aria-expanded="false" aria-controls="collapseTwo14">
-                                Application
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo14" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="card-block">
-
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/2.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/3.bmp">
-                            </div>
-                           <p>Aquaculture, water treatment, sewage treatment, waste gas treatment,food and beverage processing,</p>
+                            <p>Aquaculture, water treatment, sewage treatment, waste gas treatment,food and beverage processing,</p>
                             <p>refrigeration and other commercial and medical And industrial ozone applications and so on.</p>
 
+
                         </div>
                     </div>
                 </div>
+
+                <!--<div class="card">-->
+                    <!--<div class="card-header" role="tab" id="headingTwo14">-->
+                        <!--<h5 class="mb-0">-->
+                            <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo14" aria-expanded="false" aria-controls="collapseTwo14">-->
+                                <!--Application-->
+                            <!--</a>-->
+                        <!--</h5>-->
+                    <!--</div>-->
+                    <!--<div id="collapseTwo14" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">-->
+                        <!--<div class="card-block">-->
+
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/2.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/3.bmp">-->
+                            <!--</div>-->
+                           <!--<p>Aquaculture, water treatment, sewage treatment, waste gas treatment,food and beverage processing,</p>-->
+                            <!--<p>refrigeration and other commercial and medical And industrial ozone applications and so on.</p>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
             </div>
 
@@ -1570,7 +1914,7 @@
                     <div class="card-header" role="tab" id="headingOne15">
                         <h5 class="mb-0">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne15" aria-expanded="true" aria-controls="collapseOne15">
-                                AQUACULTURE UV SYSTEMS
+                                Ultraqua
                             </a>
                         </h5>
                     </div>
@@ -1578,30 +1922,75 @@
                     <div id="collapseOne15" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                         <div class="card-block">
 
-                            <img style="width: 700px;height:700px;" src="./Static/img/product/UV/Ultraqua/1.JPG">
+
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+                                    <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/1.JPG" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/3.bmp" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/4.bmp" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/5.bmp" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/6.bmp" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="./Static/img/product/UV/Ultraqua/7.bmp" alt="Third slide">
+                                    </div>
+
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            <!--<img style="width: 700px;height:700px;" src="./Static/img/product/UV/Ultraqua/1.JPG">-->
 
                             <p>UV systems have been chosen to increase security</p>
                             <p>from infectious diseases in millions of salmon, sturgeons, eels, tur-</p>
                             <p>bot, sea bass produced in aquaculture systems worldwide. Here our</p>
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/2.jpg">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/3.bmp">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/2.jpg">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/3.bmp">-->
+                            <!--</div>-->
                             <p>UV systems help increase FCR, and drasticly reduce the use of</p>
                             <p>antibiotics for a better and more stable production.</p>
                             <p>Diseases such as Infectious Salmon Anaemia (ISA), Infectious Pan-</p>
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/4.bmp">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/5.bmp">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/4.bmp">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/5.bmp">-->
+                            <!--</div>-->
                             <p>creatic Necrosis (IPN) and Amoebic gill disease (AGD) are being pre-</p>
                             <p>vented with the use of reliable UV systems. This have given the</p>
                             <p>fish farms security and reassurance that their fish are not infected,</p>
                             <p>thereby protecting millions of invested dollars.</p>
-                            <div>
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/6.bmp">
-                                <img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/7.bmp">
-                            </div>
+                            <!--<div>-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/6.bmp">-->
+                                <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/UV/Ultraqua/7.bmp">-->
+                            <!--</div>-->
                             <p>We know that fish farms are not always the most clean and friendly environment for</p>
                             <p>equipment. This is why it is important to choose a quality UV system, which have</p>
                             <p>proved functional over many years of operation. By choosing a ULTRAAQUA UV system</p>
@@ -1624,7 +2013,7 @@
         <div class="tab-pane" id="Feeding_machine" role="tabpanel">
             <div class="card-group">
                 <div class="card">
-                    <img class="card-img-top" src="./Static/img/product/feeding%20machine/fish%20feeding%20machine.bmp" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <img class="card-img-top" src="./Static/img/product/feeding%20machine/fish%20feeding%20machine.jpg" style="width: 350px;height: 250px;" alt="Ring Blower">
                     <div class="card-block">
                         <h4 class="card-title">fish feeding machine</h4>
                     </div>
