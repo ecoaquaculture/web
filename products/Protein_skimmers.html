@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css">
+    <script src="../Static/js/jquery.min.js"></script>
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-flow: column;
+        }
+
+        .header{
+            flex: 0 0 65px;
+            background-color: white;
+            flex-direction: row;
+        }
+
+        .content{
+            flex: 1 0 auto;
+        }
+
+        .footer{
+            flex: 0 0 61px;
+            background-color: #1d1e1f;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            margin-right: 40px;
+        }
+
+        #leftDiv ul{
+            margin: 0 auto;
+            float: none;
+            width: 90%;
+        }
+
+        #leftDiv ul li{
+            color: #444;
+        }
+
+        #leftDiv li{
+            padding: 0 0 4px 18px;
+            text-indent: 10px;
+            margin-bottom: 5px;
+            border-bottom: #ccc 1px dashed;
+        }
+
+        #leftDiv ul li ul{
+            display: none;
+            width: 364px;
+            list-style-type: none;
+        }
+
+        /*#leftDiv ul li:hover ul{*/
+        /*display: block;*/
+        /*}*/
+
+        #leftDiv li a{
+            color: #444;
+            height: 29px;
+            line-height: 29px;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: #444;
+        }
+
+        .nav-link{
+            padding: 0 0;
+        }
+
+        .carousel-inner{
+            width: auto;
+            height: 400px;
+        }
+
+
+    </style>
+
+    <script>
+        var log = console.log.bind(console)
+
+        function showTab(name) {
+            $('a[href="#'+name+'"]').tab('show') // Select tab by name
+        }
+
+        $(function(){
+            $('#leftDiv ul li a').click(function () {
+                log("进入方法")
+                $(this).parent().children("ul").toggle();
+            })
+        })
+    </script>
+
+</head>
+<body>
+<header class="header">
+
+    <iframe src="../nav.html" style="width: 100%;height: 65px;" frameborder="0"></iframe>
+
+</header>
+
+
+<div class="content" style="background-image: url('../Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
+    <div style="position: relative;width: 960px;margin: 0px auto;">
+        <a href="../index.html">
+            <img style="position: absolute;top: 22px;" src="../Static/img/logo1.png">
+        </a>
+    </div>
+
+</div>
+
+<div class="content" style="background-image: url('../Static/img/home-bg.jpg'); background-size: cover">
+    <!--内容-->
+
+
+    <iframe src="../left_nav.html" frameborder="0" style="width: 401px;float: left;margin-right: 1px;height:730px"></iframe>
+
+    <div class="tab-content" style="margin-top: 50px;margin-left: 400px;">
+
+
+        <div class="tab-pane active" id="Protein_skimmers" role="tabpanel">
+            <div id="accordion9" role="tablist" aria-multiselectable="true">
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree9">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree9" aria-expanded="false" aria-controls="collapseThree">
+                                Protein skimmers
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree9" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="card-block">
+                            <img style="max-width:700px;max-height:400px;" src="../Static/img/product/Protein%20Skimmer/protein%20skimmer.bmp">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne9">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne9" aria-expanded="true" aria-controls="collapseOne9">
+                                Functions
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne9" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+
+                            <p>Removing organism such as night soil, colloid etc, for reducing the load of biological</p> 
+                            <p>treatment and ensuring the water quality.</p>
+                            <p>Increasing the dissolved oxygen in water, for improving the biological treatment efficiency.</p>
+                            <p>Removing the harmful air in water, stabilize the PH in water.</p>
+                            <p>Mixing ozone in water also has the function of sterilization, disinfect ion and remove algae in water.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo9">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo9" aria-expanded="false" aria-controls="collapseTwo9">
+                                Appliance
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo9" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="card-block">
+                            <p>Sea or fresh water treatment</p>
+                            <p>Seafood cultivating factory </p>
+                            <p>Seawater hatcheries</p>
+                            <p>Oceanopolis, aquarium etc</p>
+                            <p>Swimming pool water treatment</p>
+                            <p>Sewage water treatment, and the lines used for ozone mixing in water</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+<footer class="footer"><a style="color: white;line-height: 61px;">Developed by Angus Cai.</a></footer>
+
+
+
+
+
+
+
+
+
+<script src="../Static/js/jquery.min.js"></script>
+<script src="../Static/js/tether.min.js"></script>
+<script src="../Static/js/bootstrap.min.js"></script>
+</body>
+</html>

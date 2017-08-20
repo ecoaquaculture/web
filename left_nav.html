@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <link rel="stylesheet" href="Static/css/bootstrap.min.css">
+    <script src="Static/js/jquery.min.js"></script>
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-flow: column;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            margin-right: 40px;
+        }
+
+        #leftDiv ul{
+            margin: 0 auto;
+            float: none;
+            width: 90%;
+        }
+
+        #leftDiv ul li{
+            color: #444;
+        }
+
+        #leftDiv li{
+            padding: 0 0 4px 18px;
+            text-indent: 10px;
+            margin-bottom: 5px;
+            border-bottom: #ccc 1px dashed;
+        }
+
+        #leftDiv ul li ul{
+            display: none;
+            width: 364px;
+            list-style-type: none;
+        }
+
+        /*#leftDiv ul li:hover ul{*/
+        /*display: block;*/
+        /*}*/
+
+        #leftDiv li a{
+            color: #444;
+            height: 29px;
+            line-height: 29px;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: #444;
+        }
+
+        .nav-link{
+            padding: 0 0;
+        }
+
+
+    </style>
+
+    <script>
+        var log = console.log.bind(console)
+
+        $(function(){
+            $('#leftDiv ul li a').click(function () {
+                log("进入方法")
+                $(this).parent().children("ul").toggle();
+            })
+        })
+    </script>
+
+</head>
+<body>
+<div style="background-image: url('./Static/img/home-bg.jpg'); background-size: cover;height: 730px">
+    <div>
+        <h3 style="font-size: 13px;overflow: hidden;height: 48px;line-height: 66px;text-indent: 20px;color: #fff;"></h3>
+        <div>
+            <div id="leftDiv" style="padding-top: 4px;zoom: 1;overflow: hidden;">
+                <ul style="list-style-type: none;" class="nav nav-tabs flex-column" role="tablist">
+                    <li id="leftli" class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#AS" role="tab">Aquaculture system</a>
+                        <ul  style="z-index: 1004;">
+                            <li>
+                                <a href="products/products_ras.html" target="_parent">Recirculating Aquaculture System</a>
+                            </li>
+                            <li><a target="_parent" href="products/MBD.html">Membrane bubble diffusers</a></li>
+                            <li><a target="_parent" href="products/Aerotubes.html">Aerotubes</a></li>
+                            <li><a target="_parent" href="products/Air_stones.html" >Air stones</a></li>
+                            <li><a target="_parent"  href="products/AB.html">Air blowers/pumps</a></li>
+                            <li><a target="_parent" href="products/Aerators.html">Aerators</a></li>
+                            <li><a target="_parent" href="products/Oxygen_Cones.html">Oxygen cones</a></li>
+                            <li><a target="_parent" href="products/Protein_skimmers.html">Protein skimmers</a></li>
+                            <li><a target="_parent" href="products/Filters.html">Filters</a></li>
+                            <li><a target="_parent" href="products/Biofilter_Media.html">Biofilter Media</a></li>
+                            <li><a target="_parent" href="products/Ozone_and_Oxygen_generations.html">Ozone and Oxygen generations</a></li>
+                            <li><a target="_parent" href="products/Ultraqua.html">UV system</a></li>
+                            <li><a href="#">Hatchery Equipment</a></li>
+                            <li><a target="_parent" href="products/Feeding_machine.html">Feeding machine</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a target="_parent" href="products/WTS.html">Wastewater treatment System</a></li>
+                    <li class="nav-item"><a target="_parent" href="products/RCS.html">Refrigeration/cooling System</a></li>
+                    <!--detail-->
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#RAS" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Aerotubes" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#MBD" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#AB" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#RB" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#RB2" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Air_stones" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Aerators" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Impeller_aeratorr" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Paddel_wheel_aerator" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Waving_surge_aerator" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Oxygen_Cones" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Protein_skimmers" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Filters" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#DRUM_FILTER" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#SAND_FILTER" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Biofilter_Media" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Ozone_and_Oxygen_generations" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#oxygen_generator" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#ozone_generator" role="tab"></a></li>
+                    <!--<li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#UV_water_sterilization_units" role="tab"></a></li>-->
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Ultraqua" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Feeding_machine" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Disc_Fine_Bubble_Diffuser" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Tube_Membrane_Diffusers" role="tab"></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link" data-toggle="tab" href="#Plate_Fine_bubble_Aerator" role="tab"></a></li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

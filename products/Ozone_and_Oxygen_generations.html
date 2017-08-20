@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css">
+    <script src="../Static/js/jquery.min.js"></script>
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-flow: column;
+        }
+
+        .header{
+            flex: 0 0 65px;
+            background-color: white;
+            flex-direction: row;
+        }
+
+        .content{
+            flex: 1 0 auto;
+        }
+
+        .footer{
+            flex: 0 0 61px;
+            background-color: #1d1e1f;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            margin-right: 40px;
+        }
+
+        #leftDiv ul{
+            margin: 0 auto;
+            float: none;
+            width: 90%;
+        }
+
+        #leftDiv ul li{
+            color: #444;
+        }
+
+        #leftDiv li{
+            padding: 0 0 4px 18px;
+            text-indent: 10px;
+            margin-bottom: 5px;
+            border-bottom: #ccc 1px dashed;
+        }
+
+        #leftDiv ul li ul{
+            display: none;
+            width: 364px;
+            list-style-type: none;
+        }
+
+        /*#leftDiv ul li:hover ul{*/
+        /*display: block;*/
+        /*}*/
+
+        #leftDiv li a{
+            color: #444;
+            height: 29px;
+            line-height: 29px;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: #444;
+        }
+
+        .nav-link{
+            padding: 0 0;
+        }
+
+        .carousel-inner{
+            width: auto;
+            height: 400px;
+        }
+
+
+    </style>
+
+    <script>
+        var log = console.log.bind(console)
+
+        function showTab(name) {
+            $('a[href="#'+name+'"]').tab('show') // Select tab by name
+        }
+
+        $(function(){
+            $('#leftDiv ul li a').click(function () {
+                log("进入方法")
+                $(this).parent().children("ul").toggle();
+            })
+        })
+    </script>
+
+</head>
+<body>
+<header class="header">
+
+    <iframe src="../nav.html" style="width: 100%;height: 65px;" frameborder="0"></iframe>
+
+</header>
+
+
+<div class="content" style="background-image: url('../Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
+    <div style="position: relative;width: 960px;margin: 0px auto;">
+        <a href="../index.html">
+            <img style="position: absolute;top: 22px;" src="../Static/img/logo1.png">
+        </a>
+    </div>
+
+</div>
+
+<div class="content" style="background-image: url('../Static/img/home-bg.jpg'); background-size: cover">
+    <!--内容-->
+
+
+    <iframe src="../left_nav.html" frameborder="0" style="width: 401px;float: left;margin-right: 1px;height:730px"></iframe>
+
+    <div class="tab-content" style="margin-top: 50px;margin-left: 400px;">
+
+
+        <div class="tab-pane active" id="Ozone_and_Oxygen_generations" role="tabpanel">
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img-top" src="../Static/img/product/ozone%20and%20oxygen%20generators/oxygen%20generator/1.bmp" style="width: 350px;height: 250px;" alt="Ring Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">oxygen generator</h4>
+                        <a href="./oxygen_generator.html" class="btn btn-primary" target="_parent">Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="../Static/img/product/ozone%20and%20oxygen%20generators/ozone%20generator/1.jpg" style="width: 350px;height: 250px;" alt="Roots Blower">
+                    <div class="card-block">
+                        <h4 class="card-title">ozone generator</h4>
+                        <a href="./ozone_generator.html" class="btn btn-primary" target="_parent">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+<footer class="footer"><a style="color: white;line-height: 61px;">Developed by Angus Cai.</a></footer>
+
+
+
+
+
+
+
+
+
+<script src="../Static/js/jquery.min.js"></script>
+<script src="../Static/js/tether.min.js"></script>
+<script src="../Static/js/bootstrap.min.js"></script>
+</body>
+</html>

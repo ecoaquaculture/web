@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../Static/css/bootstrap.min.css">
+    <script src="../Static/js/jquery.min.js"></script>
+
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-flow: column;
+        }
+
+        .header{
+            flex: 0 0 65px;
+            background-color: white;
+            flex-direction: row;
+        }
+
+        .content{
+            flex: 1 0 auto;
+        }
+
+        .footer{
+            flex: 0 0 61px;
+            background-color: #1d1e1f;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            margin-right: 40px;
+        }
+
+        #leftDiv ul{
+            margin: 0 auto;
+            float: none;
+            width: 90%;
+        }
+
+        #leftDiv ul li{
+            color: #444;
+        }
+
+        #leftDiv li{
+            padding: 0 0 4px 18px;
+            text-indent: 10px;
+            margin-bottom: 5px;
+            border-bottom: #ccc 1px dashed;
+        }
+
+        #leftDiv ul li ul{
+            display: none;
+            width: 364px;
+            list-style-type: none;
+        }
+
+        /*#leftDiv ul li:hover ul{*/
+        /*display: block;*/
+        /*}*/
+
+        #leftDiv li a{
+            color: #444;
+            height: 29px;
+            line-height: 29px;
+        }
+
+        a:visited{
+            text-decoration: none;
+            color: #444;
+        }
+
+        .nav-link{
+            padding: 0 0;
+        }
+
+        .carousel-inner{
+            width: auto;
+            height: 400px;
+        }
+
+
+    </style>
+
+    <script>
+        var log = console.log.bind(console)
+
+        function showTab(name) {
+            $('a[href="#'+name+'"]').tab('show') // Select tab by name
+        }
+
+        $(function(){
+            $('#leftDiv ul li a').click(function () {
+                log("进入方法")
+                $(this).parent().children("ul").toggle();
+            })
+        })
+    </script>
+
+</head>
+<body>
+<header class="header">
+
+    <iframe src="../nav.html" style="width: 100%;height: 65px;" frameborder="0"></iframe>
+
+</header>
+
+
+<div class="content" style="background-image: url('../Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
+    <div style="position: relative;width: 960px;margin: 0px auto;">
+        <a href="../index.html">
+            <img style="position: absolute;top: 22px;" src="../Static/img/logo1.png">
+        </a>
+    </div>
+
+</div>
+
+<div class="content" style="background-image: url('../Static/img/home-bg.jpg'); background-size: cover">
+    <!--内容-->
+
+
+    <iframe src="../left_nav.html" frameborder="0" style="width: 401px;float: left;margin-right: 1px;height:730px"></iframe>
+
+    <div class="tab-content" style="margin-top: 50px;margin-left: 400px;">
+
+
+        <div class="tab-pane active" id="WTS" role="tabpanel">
+            <div id="accordion2" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne2">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                Waste Water Management
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne2" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+
+
+                            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="../Static/img/product/WasteWater/1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="../Static/img/product/WasteWater/2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="../Static/img/product/WasteWater/3.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="../Static/img/product/WasteWater/4.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" style="width: 700px;height: 400px;" src="../Static/img/product/WasteWater/5.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            <!--<div>-->
+                            <!--<img style="width: 900px;height: 500px" src="./Static/img/product/WasteWater/5.jpg">-->
+                            <!--</div>-->
+
+                            <p>All recirculation systems (RAS) intake and discharge water whether it be freshwater or salt water at one time or another.</p>
+                            <p>Fish displace water as they grow and this water must go somewhere, all systems have a designed water area/m3 therefore a fish biomass increases water is displaced to make wy for increased fish weight.</p>
+                            <p>To maintain a healthy water environment waste is removed daily, this waste is contained in waters drained off to which unless extensive tertiary treatment is attached a % of water will be removed and thus replacement is required.</p>
+                            <p>Seawater must be continually changed daily to maintain and reconstituted to maintain the corect salinity and chemical balance water exchange is usually at between 2-5% on gross system volume per day.</p>
+                            <p>Grading, harvesting fish health management also requires displacement of water to discharge from tanks in and therefore additional water is required.</p>
+                            <p>Cleaning , washing of facilities, culture tanks, equipment, filtration backwashing, plumbing lines, and staff amenities all takes the use of either fresh or seawater daily that has to be added and removed.</p>
+                            <p>Where does this water go?</p>
+                            <!--<div>-->
+                            <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/1.jpg">-->
+                            <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/2.jpg">-->
+                            <!--</div>-->
+                            <p>Eventual a % must go to the external environment, good aquaculture operations mitigate the discharge however Zero discharge is physically impossible.</p>
+                            <p>Dedicated waste treatment is mandatory, however at some time these operations become full and thus discharge to the external environment is inevitable, the aim is to mitigate such discharge as to not contain high levels of nutrients or bacterial waste thru the use of high level biological filtration, Hydroponics/Aquaponics that can remove a % of ammonia and complete the denitrifying process and waste management systems that can remove successfully solid waste so discharge waters meet the environmental guidelines for water discharge to the environment.</p>
+                            <p>ECO waste management incorporate multiple waste treatment operations in that attention is given in a collective procedure to as to biological denitrifying, collection of suspended and settable solids with the ability to reuse of high % of treated waters after disinfection in both freshwater and marine operations. Reuse is limited to individual systems to maintain biosecurity and remove cross.</p>
+                            <p>Hydroponics are a logical and profitable addition supplying a wide variety of terrestrial vegetables, flowers and herbs in freshwater operations but can be limited by space dependent upon overall system sizing and can only be applied to a specific individual system.</p>
+                            <p>Aquaponics can also be included but more as to support value adding options in that of growing other aquatic species such as seaweed, abalone, shrimp, shell fish.</p>
+                            <p>During the concept and design planning phase of any aquaculture proposal ECO addresses the criteria required by respective Government/Authorities as to waste management discharge including sedimentation and nutrient set l control levels and apply the design options/requirements specific to the operational design.</p>
+
+
+                            <!--<div>-->
+                            <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/3.jpg">-->
+                            <!--<img style="width: 450px;height: 400px;" src="./Static/img/product/WasteWater/4.jpg">-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+<footer class="footer"><a style="color: white;line-height: 61px;">Developed by Angus Cai.</a></footer>
+
+
+
+
+
+
+
+
+
+<script src="../Static/js/jquery.min.js"></script>
+<script src="../Static/js/tether.min.js"></script>
+<script src="../Static/js/bootstrap.min.js"></script>
+</body>
+</html>
