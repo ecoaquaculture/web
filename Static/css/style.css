@@ -93,3 +93,36 @@ a:visited{
 #MBD strong:hover{
     color: red!important;
 }
+
+.content-header-box{
+    position: relative;
+    min-height: 307px;
+    max-width: 990px;
+    margin: 0 auto;
+    width: 100%;
+}
+.content-header-box:before{
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    position: absolute;
+    right: -166px;
+    top: 0;
+    background: url('./Static/img/about-content.jpg') no-repeat right top;
+    background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    content: '';
+}
+.inner-box{
+    min-height: 130px;
+    display: table;
+    position: relative;
+    max-width: 960px;
+    margin: 55px auto 0;
+    width: calc(100% - 30px);
+}
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
