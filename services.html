@@ -6,63 +6,14 @@
     <title>Our Retailers</title>
 
     <link rel="stylesheet" href="Static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/css/style.css">
+
+    <script src="Static/js/jquery.min.js"></script>
+    <script src="Static/js/tether.min.js"></script>
+    <script src="Static/js/bootstrap.min.js"></script>
 
     <style>
-        html,body{
-            height: 100%;
-        }
-        body{
-            display: flex;
-            flex-flow: column;
-        }
 
-        .header{
-            flex: 0 0 65px;
-            background-color: white;
-            flex-direction: row;
-        }
-
-        .content{
-            flex: 1 0 auto;
-        }
-
-        .footer{
-            flex: 0 0 61px;
-            background-color: #1d1e1f;
-            text-align: center;
-        }
-        a{
-            text-decoration: none;
-        }
-
-        li{
-            margin-right: 40px;
-        }
-
-        .content-header-box{
-            position: relative;
-            min-height: 307px;
-            max-width: 990px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        .content-header-box:before{
-            width: 100%;
-            min-width: 1200px;
-            height: 100%;
-            position: absolute;
-            right: -166px;
-            top: 0;
-            background: url('./Static/img/about-content.jpg') no-repeat right top;
-            background-size: auto 100%;
-            -webkit-background-size: auto 100%;
-            content: '';
-        }
-        .box{
-            padding: 20px;
-            border: 1px solid #e4e4e4;
-            margin-bottom: 30px;
-        }
     </style>
 
 
@@ -70,14 +21,12 @@
 <body>
 <header class="header">
 
-
     <iframe src="nav.html" style="width: 100%;height: 65px;" frameborder="0"></iframe>
-
 
 </header>
 
 
-<div style="background-image: url('./Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
+<div class="content" style="background-image: url('./Static/img/1.jpg');background-repeat: no-repeat; background-size: 100% auto;width: 100%;height: 111px;flex: 0 0 auto">
     <div style="position: relative;width: 960px;margin: 0px auto;">
         <a href="index.html">
             <img style="position: absolute;top: 22px;" src="./Static/img/logo1.png">
@@ -87,7 +36,7 @@
 </div>
 
 
-<div class="content">
+<div class="content" style="margin-top: -12px">
     <!--内容-->
     <div style="overflow: hidden;background: #2a3545;margin-top: 12px;">
         <div class="content-header-box">
@@ -245,12 +194,17 @@
 
 
 
+<script>
+//    $(function () {
+//        $('.navbar-nav active').removeClass("active");
+//        $('.navbar-nav li .active').removeClass("active");
+//        $('.navbar-nav li:eq(4)').addClass("active")
+//        $('.navbar-nav li:eq(4) a').addClass("active")
+//    })
+</script>
 
 
 
 
-<script src="Static/js/jquery.min.js"></script>
-<script src="Static/js/tether.min.js"></script>
-<script src="Static/js/bootstrap.min.js"></script>
 </body>
 </html>

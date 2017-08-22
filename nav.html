@@ -14,22 +14,6 @@
             display: flex;
             flex-flow: column;
         }
-
-        .header{
-            flex: 0 0 65px;
-            background-color: white;
-            flex-direction: row;
-        }
-
-        .content{
-            flex: 1 0 auto;
-        }
-
-        .footer{
-            flex: 0 0 61px;
-            background-color: #1d1e1f;
-            text-align: center;
-        }
         a{
             text-decoration: none;
         }
@@ -38,73 +22,16 @@
             margin-right: 40px;
         }
 
-        #leftDiv ul{
-            margin: 0 auto;
-            float: none;
-            width: 90%;
-        }
-
-        #leftDiv ul li{
-            color: #444;
-        }
-
-        #leftDiv li{
-            padding: 0 0 4px 18px;
-            text-indent: 10px;
-            margin-bottom: 5px;
-            border-bottom: #ccc 1px dashed;
-        }
-
-        #leftDiv ul li ul{
-            display: none;
-            width: 364px;
-            list-style-type: none;
-        }
-
-        /*#leftDiv ul li:hover ul{*/
-        /*display: block;*/
-        /*}*/
-
-        #leftDiv li a{
-            color: #444;
-            height: 29px;
-            line-height: 29px;
-        }
-
-        a:visited{
-            text-decoration: none;
-            color: #444;
-        }
-
-        .nav-link{
-            padding: 0 0;
-        }
-
-        .carousel-inner{
-            width: auto;
-            height: 400px;
-        }
 
 
     </style>
 
     <script>
-        var log = console.log.bind(console)
 
-        function showTab(name) {
-            $('a[href="#'+name+'"]').tab('show') // Select tab by name
-        }
-
-        $(function(){
-            $('#leftDiv ul li a').click(function () {
-                log("进入方法")
-                $(this).parent().children("ul").toggle();
-            })
-        })
     </script>
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="height: 65px;background-color: white">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="height: 65px;background-color: mediumpurple">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -114,31 +41,31 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="padding-left: 30%">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" target="_parent">Home</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="company.html">Company</a>
-            </li>
-
-            <li class="nav-item active">
-                <a class="nav-link active" href="products.html">Products</a>
+                <a class="nav-link" href="company.html" target="_parent">Company</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="farmingTechnology.html" style="width: 166px;">Farming technology<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="products.html" target="_parent">Products</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="farmingTechnology.html" style="width: 166px;" target="_parent">Farming technology<span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="cases.html">Cases</a>
+                <a class="nav-link" href="services.html" target="_parent">Services</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="cases.html" target="_parent">Cases</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_parent">Contact</a>
             </li>
 
         </ul>
