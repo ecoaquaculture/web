@@ -108,7 +108,7 @@ a:visited{
     position: absolute;
     right: -166px;
     top: 0;
-    background: url('./Static/img/about-content.jpg') no-repeat right top;
+    background: url('../img/about-content.jpg') no-repeat right top;
     background-size: auto 100%;
     -webkit-background-size: auto 100%;
     content: '';
