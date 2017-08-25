@@ -31,34 +31,6 @@ li{
     margin-right: 40px;
 }
 
-#leftDiv ul{
-    margin: 0 auto;
-    float: none;
-    width: 90%;
-}
-
-#leftDiv ul li{
-    color: #444;
-}
-
-#leftDiv li{
-    padding: 0 0 4px 18px;
-    text-indent: 10px;
-    margin-bottom: 5px;
-    border-bottom: #ccc 1px dashed;
-}
-
-#leftDiv ul li ul{
-    display: none;
-    width: 364px;
-    list-style-type: none;
-}
-
-#leftDiv li a{
-    color: #444;
-    height: 29px;
-    line-height: 29px;
-}
 
 a:visited{
     text-decoration: none;
@@ -134,3 +106,42 @@ a:visited{
     width: 100%;
     height:100px;
 }
+
+
+a[name='ins']{
+    background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/instagram.svg') no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+a[name='ins']:hover{
+    background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/instagram-with-circle.svg') no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+a[name='facebook']{
+    background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/facebook.svg') no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+a[name='facebook']:hover{
+    background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/facebook-with-circle.svg') no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+a[name='youtube']{
+    background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/youtube.svg') no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+a[name='youtube']:hover{
+    background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/youtube-with-circle.svg') no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+
+
