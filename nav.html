@@ -5,6 +5,8 @@
     <title>顶部导航栏</title>
     <link rel="stylesheet" href="Static/css/bootstrap.min.css">
     <script src="Static/js/jquery.min.js"></script>
+    <script src="Static/js/popper.min.js"></script>
+    <script src="Static/js/bootstrap.min.js"></script>
 
     <style>
         html,body{
@@ -22,6 +24,43 @@
             margin-right: 40px;
         }
 
+        a[name='ins']{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/instagram.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='ins']:hover{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/instagram-with-circle.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='facebook']{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/facebook.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='facebook']:hover{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/facebook-with-circle.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='youtube']{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/youtube.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='youtube']:hover{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/youtube-with-circle.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+
 
 
     </style>
@@ -31,50 +70,47 @@
     </script>
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="height: 65px;background-color: mediumpurple">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+<nav class="nav justify-content-center" style="height: 35px;">
+    <a class="nav-link" href="https://www.instagram.com/ecoaquaculture/" target="_blank" name="ins"></a>
+    <a class="nav-link" href="https://www.youtube.com/channel/UCajfxldmcDrCQFGjirZA1hg" target="_blank" name="youtube"></a>
+    <a class="nav-link" href="https://www.facebook.com/ecoaquaculture/" target="_blank" name="facebook"></a>
+
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 65px;">
+    <a class="navbar-brand" href="#">Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!--<a class="navbar-brand" href="#" style="padding-left: 10%">-->
-    <!--Navbar-->
-    <!--</a>-->
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="padding-left: 30%">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html" target="_parent">Home</a>
+        <ul class="navbar-nav justify-content-end mx-auto w-100">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html" target="_parent">Home <span class="sr-only">(current)</span></a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="company.html" target="_parent">Company</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="products.html" target="_parent">Products</a>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="farmingTechnology.html" style="width: 166px;" target="_parent">Farming technology<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="farmingTechnology.html" target="_parent" style="width: 166px;">Farming technology</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="services.html" target="_parent">Services</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="cases.html" target="_parent">Cases</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="contact.html" target="_parent">Contact</a>
             </li>
-
             <div id="google_translate_element"></div>
-
-
         </ul>
     </div>
 </nav>
-
 
 <script type="text/javascript">
     function googleTranslateElementInit() {
