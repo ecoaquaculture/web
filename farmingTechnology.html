@@ -3,22 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>contact us</title>
+    <title>Farming technology</title>
 
     <link rel="stylesheet" href="Static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Static/css/style.css">
+    <!--<link rel="stylesheet" href="Static/css/style.css">-->
 
     <style>
+        /*html,body{*/
+            /*height: 100%;*/
+        /*}*/
+        body{
+            display: flex;
+            flex-flow: column;
+        }
+
+        .header{
+            flex: 0 0 100px;
+            background-color: white;
+            flex-direction: row;
+        }
+
+        .content{
+            flex: 1 0 auto;
+            margin-top: -6px;
+        }
+
+        .footer{
+            flex: 0 0 61px;
+            background-color: #1d1e1f;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        li{
+            margin-right: 40px;
+        }
+
+
+        a:visited{
+            text-decoration: none;
+            color: #444;
+        }
+
+
+
+
+
+        a[name='ins']{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/instagram.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='ins']:hover{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/instagram-with-circle.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='facebook']{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/facebook.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='facebook']:hover{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/facebook-with-circle.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='youtube']{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/youtube.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+        a[name='youtube']:hover{
+            background:url('Static/img/Entypo+/Entypo+%20Social%20Extension/youtube-with-circle.svg') no-repeat;
+            background-size: 25px 25px;
+            background-position: center;
+        }
+
+
+
+
+
+        #section1{
+            background-image: url('Static/img/farming technology/6.png');
+            background-attachment: fixed,fixed,fixed;
+            background-position: top left,center center,center center;
+            background-size: auto,cover,cover;
+            /*overflow: hidden;*/
+            /*position: relative;*/
+            /*text-align: center;*/
+            /*height: calc(100vh - 103px);*/
+
+        }
+
 
     </style>
 
 
 </head>
 <body>
-<header class="header">
+<header class="header fixed-top">
 
-    <iframe src="nav.html"       frameborder="0"></iframe>
+    <!--<iframe src="nav.html"       frameborder="0"></iframe>-->
 
+
+    <nav class="nav justify-content-center" style="height: 35px;">
+        <a class="nav-link" href="https://www.instagram.com/ecoaquaculture/" target="_blank" name="ins"></a>
+        <a class="nav-link" href="https://www.youtube.com/channel/UCajfxldmcDrCQFGjirZA1hg" target="_blank" name="youtube"></a>
+        <a class="nav-link" href="https://www.facebook.com/ecoaquaculture/" target="_blank" name="facebook"></a>
+        <a class="nav-link" href="tel:0086-18620802913"><img src="Static/img/Entypo+/Entypo+/phone.svg" style="width: 25px;height: 25px;">0086-18620802913</a>
+        <a class="nav-link" href="mailto:aquaculture@ecowatercn.com"><img src="Static/img/Entypo+/Entypo+/mail.svg" style="width: 25px;height: 25px;">aquaculture@ecowatercn.com</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 65px;">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end mx-auto w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" target="_parent">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html" target="_parent">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html" target="_parent">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="farmingTechnology.html" target="_parent" style="width: 166px;">Farming technology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" target="_parent">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cases.html" target="_parent">Cases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_parent">Contact</a>
+                    <!--</li> <li class="nav-item">-->
+                    <!--<a class="nav-link" href="#"><div id="google_translate_element"></div></a>-->
+                    <!--</li>-->
+            </ul>
+        </div>
+    </nav>
 </header>
 
 
@@ -26,57 +163,238 @@
 ">
     <div style="position: relative;width: 960px;margin: 0px auto;">
         <a href="index.html">
-            <img style="position: absolute;top: 22px;" src="./Static/img/logo1.png">
+            <img style="position: absolute;top: 8px;" src="./Static/img/logo1.png">
         </a>
     </div>
 
 </div>
 
 
-<div class="content" style="margin-top: -12px;">
+<div class="content" style="margin-top: -12px;overflow-y: scroll">
     <!--内容-->
-    <div style="overflow: hidden;background: #2a3545;margin-top: 12px;">
-        <div class="content-header-box">
-            <img src="./Static/img/cont-us.png" alt="" style="margin-left: 15px;position: relative;margin-top: 72px;margin-bottom: 36px;">
-            <p style="padding-left: 15px;padding-right: 15px;position: relative;font-family: 'Open Sans', sans-serif;font-weight: 400;font-size: 15px;line-height: 28px;color: #fff;">
-                2017年07月22日
-                <br>
-                2017年07月21日
-                <br>
-                2017年07月20日
-            </p>
-        </div>
-    </div>
 
-    <div style="max-width: 960px;margin: 0 auto;padding-bottom: 61px;width: 100%">
-        <h4 style="font-family: 'Open Sans', sans-serif;font-weight: 700;font-size: 16px;color: #000;padding-bottom: 5px;padding-top: 50px;">where are you</h4>
-        <div style="float: left;width: 460px;border-right: 1px solid #e2e2e2;">
-                <h3 style="font-family: 'Open Sans', sans-serif;font-weight: 600;font-size: 13px;color: #a1a1a1;">
-                    <strong style="font-family: 'Open Sans', sans-serif;ont-weight: 700;font-size: 14px;color: #000;line-height: 26px;">
-                        Togun Malaysia Sdn Bhd
-                    </strong>
+    <div >
+        <section style="background-image: url('Static/img/farming%20technology/6.png');height: calc(100vh);width: 100%;background-size: cover;background-repeat: no-repeat;background-attachment: fixed;text-align: center">
+            <div style="padding-top: 10%">
+                <img src="Static/img/Entypo+/Entypo+/air.svg" alt="" style="width: 75px;height: 75px;">
+                <h1 style="line-height: 2.5em">Nano aerotube – New Innovation</h1>
+                <p style="font-size: 1.2em">
+                    We are proud to introduce Nano-Tube,
                     <br>
-                    Vantage, Unit B-3-6, Jalan Desiran Tanjung,
-                    Tanjung Tokong, 10470 Penang, Malaysia.
-                    (604) 899 3968
-                </h3>
-        </div>
-        <div style="float: left;width: 460px;padding-left: 40px;">
-            <h3 style="font-family: 'Open Sans', sans-serif;font-weight: 600;font-size: 13px;color: #a1a1a1;">
-                <strong style="font-family: 'Open Sans', sans-serif;ont-weight: 700;font-size: 14px;color: #000;line-height: 26px;">
-                    Togun Malaysia Sdn Bhd
-                </strong>
-                <br>
-                Vantage, Unit B-3-6, Jalan Desiran Tanjung,
-                Tanjung Tokong, 10470 Penang, Malaysia.
-                (604) 899 3968
-            </h3>
-        </div>
-    </div>
+                    which is significant improvement solution to diffuse oxygen in the water.
+                    <br>
+                    Based on studies and experiments in shrimp ponds,
+                    <br>
+                    we developed the Nano-tube.
+                    <br>
+                    These products of Nano-Tube were invented specifically to transfer oxygen into the water.
+                    <br>
+                    Nano-Tube creates more continuous air bubble to transfer oxygen into the water
+                    <br>
+                    and less power consumption rate compared with other systems.
+                </p>
+
+                <a href="#one"><img src="Static/img/Entypo+/Entypo+/arrow-with-circle-down.svg" alt="" style="width: 75px;height: 75px;margin-top: 4%"></a>
+
+            </div>
+        </section>
+
+        <section id="one" style="height: calc(100vh);width: 100%;">
+
+            <div style="padding: 2em 0 0 3em;">
+                <div style="width: 50%;display: inline-block">
+                    <h1>Nano aerotube - New Aeration</h1>
+                    <p style="font-size: 16px;color: #666;font-weight: 300;line-height: 1.65em;padding-top: 1em">
+                        The smaller size of bubbles is,the large surface area is,
+                        <br>
+                        which is the reason why the small bubble aerator transfers oxygen better than the big bubble aerator.
+                        <br>
+                        To maximize aeration efficiency in your shrimp pond, the aerator must both create small bubbles
+                        <br>
+                        and require less power consumption. Nano-Tube technology meets both goals.
+
+                    </p>
+                </div>
+                <div style="width: 50%;display: inline;padding-left: 5%">
+                    <img src="Static/img/farming%20technology/2.jpg" style="width: 500px;height: 400px;" alt="">
+                </div>
+            </div>
+
+
+            <div style="padding:2em 0 0 3em;">
+
+                <div style="width: 50%;display: inline;padding-left: 5%">
+                    <img src="Static/img/farming%20technology/3.jpg" style="width: 500px;height: 400px;" alt="">
+                </div>
+
+                <div style="width: 50%;display: inline-block;padding-left: 5em">
+                    <p style="font-size: 16px;color: #666;font-weight: 300;line-height: 1.65em;padding-top: 1em">
+                    The technology of Nano-Tube achieves high performance and efficiency because production process is patented particularly,
+                    <br>
+                    through a unique combination of techniques and materials to create tiny holes in the tube length.
+                    <br>
+                    The tiny holes allow air move into the water very efficiently.
+                    <br>
+                    Combing Nano-Tube with an efficient air blower brings high performance and method of creating steam with low cost.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section style="background-image: url('Static/img/farming%20technology/8.jpg');height: calc(100vh);width: 100%;background-size: cover;background-repeat: no-repeat;background-attachment: fixed">
+            <div style="padding:11em 0 0 3em;">
+
+                <div style="width: 50%;padding-left: 5%;display: inline-block">
+
+                    <br>
+
+                    <!--<div>-->
+                  <span style="border:2px solid bisque;width: 100px;height: 100px;text-align: center;line-height: 100px;display: inline-block;margin-left: 7em;margin-top: 6em">
+                      <img class="icon" src="Static/img/Entypo+/Entypo+/megaphone.svg" alt="Megaphone pictogram" style="width: 50px;height: 50px;">
+                      </span>
+
+                    <span style="border:2px solid bisque;width: 100px;height: 100px;text-align: center;line-height: 100px;display: inline-block;margin-left: 7em">
+                        <img class="icon" src="Static/img/Entypo+/Entypo+/funnel.svg" alt="Megaphone pictogram" style="width: 50px;height: 50px;">
+                    </span>
+                    <!--</div>-->
+
+                    <br>
+
+                    <!--<div>-->
+                        <span style="border:2px solid bisque;width: 100px;height: 100px;text-align: center;line-height: 100px;display: inline-block;margin-left: 7em;margin-top: 6em">
+                            <img class="icon" src="Static/img/Entypo+/Entypo+/flash.svg" alt="Megaphone pictogram" style="width: 50px;height: 50px;">
+                        </span>
+                        <span style="border:2px solid bisque;width: 100px;height: 100px;text-align: center;line-height: 100px;display: inline-block;margin-left: 7em;">
+                            <img class="icon" src="Static/img/Entypo+/Entypo+/medal.svg" alt="Megaphone pictogram" style="width: 50px;height: 50px;">
+                        </span>
+                    <!--</div>-->
+
+                    <br>
+
+
+                    <!--<div>-->
+                            <span style="border:2px solid bisque;width: 100px;height: 100px;text-align: center;line-height: 100px;display: inline-block;margin-left: 7em;margin-top: 6em">
+                                <img class="icon" src="Static/img/Entypo+/Entypo+/camera.svg" alt="Megaphone pictogram" style="width: 50px;height: 50px;">
+                            </span>
+                            <span style="border:2px solid bisque;width: 100px;height: 100px;text-align: center;line-height: 100px;display: inline-block;margin-left: 7em">
+                                <img class="icon" src="Static/img/Entypo+/Entypo+/thumbs-up.svg" alt="Megaphone pictogram" style="width: 50px;height: 50px;">
+                            </span>
+                    <!--</div>-->
+
+
+                        </div>
+
+
+
+                <div style="width: 50%;display:inline-block;padding-right: 7em;margin-top: 7em;float: right">
+                    <p style="font-size: 16px;font-weight: 300;line-height: 1.65em;color: white">
+                        The technology of Nano-Tube achieves high performance and efficiency because production process is patented particularly,
+                        <br>
+                        through a unique combination of techniques and materials to create tiny holes in the tube length.
+                        <br>
+                        The tiny holes allow air move into the water very efficiently.
+                        <br>
+                        Combing Nano-Tube with an efficient air blower brings high performance and method of creating steam with low cost.
+                    </p>
+
+                    <p style="font-size: 16px;font-weight: 300;line-height: 1.65em;color: white;padding-top: 2em">
+                        Thanks to a number of pores created in the process of our manufacturing,
+                        <br>
+                        air resistance is low through the tube and balances with energy demand.
+                        <br>
+                        Therefore, when operating with Nano-Tube,
+                        <br>
+                        you can use significantly less power than traditional aeration methods: water blowers,
+                        <br>
+                        paddle wheel aerators, submersible pump, less efficient tubing tube…
+
+                    </p>
+
+                    <p style="font-size: 16px;font-weight: 300;line-height: 1.65em;color: white;padding-top: 2em">
+                        The benefits of Nano-Tube technology primarily include reduced electricity costs,
+                        <br>
+                        higher speed of oxygen / hr, the level of dissolved oxygen and the improved bottom (the pond / lake).
+                        <br>
+                        This shows exactly that the Nano-Tube is better than other aerators.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <section style="height: calc(100vh);width: 100%;">
+
+            <div style="padding: 8em 0 0 3em;text-align: center;">
+                    <h1>Applications of Nano-Tube</h1>
+
+                    <p style="font-size: 16px;color: #666;font-weight: 300;line-height: 1.65em;padding-top: 2em">
+                        Nano-Tube brings different aeration solution with extraordinary advantages by creating smaller bubbles,
+                        <br>
+                        more effective aeration, higher oxygen transfer rate and less electricity use.
+                <hr style="margin-top: 2em">
+                <br style="margin-top: 2em">
+                Whether you are farming shrimp or fish,wherever you are using traditional aeration system to generate oxygen in the water,
+                        <br>
+                        you can benefit from Nano-Tube efficiently.
+                    </p>
+
+                <div style="margin-top: 4em">
+                <div style="width: 30%;display: inline-block">
+                    <span>
+                        <img src="Static/img/farming%20technology/7.jpg" alt="" style="width: 326px;height: 211px">
+                    </span>
+                    <h3 style="margin-top: 2em">Commercial shrimp farming</h3>
+                    <p style="margin-top: 2em">
+                        Nano-Tube supplies effectively oxygen to shrimp ponds,
+                        <br>
+                        saves the initial investment cost, installs and uses easily.
+                    </p>
+                </div>
+
+                    <div style="width: 31%;display: inline-block">
+                    <span>
+                        <img src="Static/img/farming%20technology/8.jpg" alt="" style="width: 326px;height: 211px">
+                    </span>
+                        <h3 style="margin-top: 2em">Nursery ponds</h3>
+                        <p style="margin-top: 2em">
+                            Nano-Tube is the best choice for aeration in shrimp hatchery.
+                            <br>
+                            High dissolved oxygen helps shrimp fast grow, reduce wastage.
+
+                        </p>
+                    </div>
+
+                    <div style="width: 30%;display: inline-block">
+                    <span>
+                        <img src="Static/img/farming%20technology/10.jpg" alt="" style="width: 326px;height: 211px">
+                    </span>
+                        <h3 style="margin-top: 2em">Greenhouse shrimp farming</h3>
+                        <p style="margin-top: 2em">
+                            Using Nano-Tube aeration technology reduces energy costs
+                            <br>
+                            and allows culturing super-intensive density.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
 
 
     </div>
 
+
+
+    </div>
 
 
 </div>
@@ -93,5 +411,13 @@
 <script src="Static/js/jquery.min.js"></script>
 <script src="Static/js/popper.min.js"></script>
 <script src="Static/js/bootstrap.min.js"></script>
+
+<script>
+    $("section a").click(function () {
+        $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -20+ "px"}, 500);
+        return false;//不要这句会有点卡顿
+    });
+
+</script>
 </body>
 </html>
