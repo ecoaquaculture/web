@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a8b85d-9d8d-4af0-95b8-00753c53bb80" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cases2.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cases.html" afterPath="$PROJECT_DIR$/cases.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -185,8 +186,8 @@
       <file leaf-file-name="cases.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cases.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -234,24 +235,7 @@
                 <element signature="n#style#0;n#video#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#video#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1504060611512" expanded="false" signature="1462:1474" ph="..." />
-                <marker date="1504060611512" expanded="false" signature="1524:1702" ph="..." />
-                <marker date="1504060611512" expanded="false" signature="1741:1789" ph="..." />
-                <marker date="1504060611512" expanded="false" signature="1833:1987" ph="..." />
-                <marker date="1504060611512" expanded="false" signature="2126:2299" ph="..." />
-                <marker date="1504060611512" expanded="false" signature="2338:2385" ph="..." />
-                <marker date="1504060611512" expanded="false" signature="2429:2583" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cases2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cases2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="71" column="28" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="71" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -951,16 +935,15 @@
       <workItem from="1503908915095" duration="3047000" />
       <workItem from="1503937287940" duration="5735000" />
       <workItem from="1504002771562" duration="4731000" />
-      <workItem from="1504016240136" duration="9222000" />
+      <workItem from="1504016240136" duration="9446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177152000" />
+    <option name="totallyTimeSpent" value="177376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -976,6 +959,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17095852" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -986,7 +970,6 @@
       <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1520,8 +1503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cases.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1569,13 +1552,6 @@
             <element signature="n#style#0;n#video#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#video#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1504060611512" expanded="false" signature="1462:1474" ph="..." />
-            <marker date="1504060611512" expanded="false" signature="1524:1702" ph="..." />
-            <marker date="1504060611512" expanded="false" signature="1741:1789" ph="..." />
-            <marker date="1504060611512" expanded="false" signature="1833:1987" ph="..." />
-            <marker date="1504060611512" expanded="false" signature="2126:2299" ph="..." />
-            <marker date="1504060611512" expanded="false" signature="2338:2385" ph="..." />
-            <marker date="1504060611512" expanded="false" signature="2429:2583" ph="..." />
           </folding>
         </state>
       </provider>
